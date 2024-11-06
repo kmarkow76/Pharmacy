@@ -1,22 +1,127 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Основные стили для всего приложения */
 body {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Задаем минимальную высоту для body, чтобы занимал весь экран */
+  margin: 0;
+  background-color: #ffeef4; /* Нежно розовый фон */
 }
+
+.container {
+  flex-grow: 1;  /* Контент занимает оставшееся место */
+  padding-top: 100px; /* Отступ сверху, чтобы учесть высоту заголовка */
+  padding-bottom: 20px;  /* Немного отступа снизу для предотвращения наложения футера */
+}
+
+/* Контейнер для изображения */
+.image-container {
+  margin-bottom: 20px; /* Отступ снизу, чтобы изображение не прижималось к футеру */
+}
+
+/* Навигация */
+.navbar {
+  background-color: #f8d7e5; /* Светло-розовый цвет навигации */
+}
+
+.navbar-nav .nav-link {
+  color: #370b0b; /* Тёмно-розовый цвет ссылок */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0c0e10; /* Цвет при наведении */
+}
+#header-top {
+  position: fixed; /* Фиксируем заголовок */
+  top: 0; /* Ставим его в верхнюю часть экрана */
+  width: 100%; /* Занимает всю ширину */
+  z-index: 1000; /* Убедитесь, что он поверх других элементов */
+  transition: transform 0.3s ease-in-out; /* Плавный переход */
+}
+
+/* Стили для футера */
+footer {
+  background-color: #f8d7e5; /* Светло-розовый цвет фона */
+  color: #370b0b; /* Темный цвет текста */
+  padding: 20px 0; /* Отступ сверху и снизу */
+  text-align: center;
+  border-top: 2px solid #e2a3b1; /* Линия сверху для разделения */
+}
+
+footer p {
+  margin: 5px 0; /* Убираем большие отступы между текстом */
+}
+
+footer a {
+  color: #370b0b; /* Цвет ссылок, чтобы они гармонировали с текстом */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+footer a:hover {
+  color: #0c0e10; /* Цвет при наведении */
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+/* Стиль заголовка на странице "О нас" */
+h1 {
+  font-family: 'Georgia', serif; /* Классический шрифт для ретро-стиля */
+  color: #4b2e2e; /* Темно-коричневый цвет для атмосферы */
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-new {
+  border-radius: 12px; /* Увеличим закругление углов */
+  color: white;
+  transition: .2s linear;
+  background: #FF77B1; /* Розовый оттенок */
+  padding: 10px 22px; /* Увеличим размер кнопки */
+  font-size: 18px; /* Увеличим размер шрифта */
+  text-decoration: none; /* Убираем подчеркивание */
+  display: inline-block; /* Убедимся, что элемент ведет себя как кнопка */
+}
+
+.btn-new:hover {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #FF56A1; /* Темный розовый оттенок для теней */
+  text-decoration: none; /* Убираем подчеркивание и при наведении */
+  color: white; /* Оставляем цвет текста белым при наведении */
+}
+h1 {
+  font-size: 1.8em; /* Уменьшаем размер шрифта */
+  color: #370b0b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Отступы между элементами уменьшены */
+  align-items: center;
+  margin-bottom: 10px; /* Уменьшаем отступ снизу */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #370b0b;
+}
+
+.contact-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+#yandex-map {
+  width: 100%;
+  height: 400px;
+  margin-top: 0; /* Убираем верхний отступ */
+  margin-bottom: 10px; /* Легкий отступ снизу */
+}
+
+
+
+

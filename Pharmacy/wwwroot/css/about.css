@@ -1,0 +1,38 @@
+/* Основные стили страницы "О нас" */
+body.about-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff5f7; /* Светлый, пастельный фон */
+  margin: 0;
+  padding: 0;
+}
+
+.container.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 10px; /* Отступ сверху, чтобы учесть фиксированный заголовок */
+  padding-bottom: 20px;
+}
+
+/* Заголовок только внутри "О нас" */
+.about-container h1 {
+  font-size: 2.5em;
+  color: #b34093; /* Розовый оттенок */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Основной текст только внутри "О нас" */
+.about-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0px 0;
+  color: #4a4a4a;
+}
+
+/* Эффекты для текста в "О нас" */
+.about-container p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #b34093;
+}
