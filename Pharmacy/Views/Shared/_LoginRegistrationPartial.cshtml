@@ -1,0 +1,53 @@
+﻿@* _LoginRegistrationPartial.cshtml *@
+<div class="login-registration-container">
+    <div class="tabs">
+        <button id="login-tab" class="active" onclick="showLoginForm()">Войти</button>
+        <button id="register-tab" onclick="showRegisterForm()">Зарегистрироваться</button>
+    </div>
+
+    <!-- Форма входа -->
+    <div class="form-container" id="form_signin" style="display:block;">
+        <h2>Вход</h2>
+        <div id="error-messages-signin"></div>
+        <form>
+            <div>
+                <label for="username">Почта:</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <div>
+                <button type="button" onclick="login()">Войти</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Форма регистрации -->
+    <div class="form-container" id="form_signup" style="display:none;">
+        <h2>Регистрация</h2>
+        <div id="error-messages-signup"></div>
+        <form>
+            <div>
+                <label for="reg-username">Имя пользователя:</label>
+                <input type="text" id="reg-username" name="username" required />
+            </div>
+            <div>
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required />
+            </div>
+            <div>
+                <label for="reg-password">Пароль:</label>
+                <input type="password" id="reg-password" name="password" required />
+            </div>
+            <div>
+                <label for="reg-password-confirm">Подтвердите пароль:</label>
+                <input type="password" id="reg-password-confirm" name="password-confirm" required />
+            </div>
+            <div>
+                <button type="button" onclick="register()">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+</div>

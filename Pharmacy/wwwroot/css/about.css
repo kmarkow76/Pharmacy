@@ -2,7 +2,7 @@
 body.about-page {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #fff5f7; /* Светлый, пастельный фон */
+  background-color: #f7f3f0; /* Цвет фона такой же, как у других секций */
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,10 @@ body.about-page {
   color: #b34093; /* Розовый оттенок */
   text-align: center;
   margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f3f0; /* Цвет фона, как у остальных секций */
+  border-radius: 8px; /* Округление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень для заголовка */
 }
 
 /* Основной текст только внутри "О нас" */
@@ -28,6 +32,10 @@ body.about-page {
   line-height: 1.6;
   margin: 0px 0;
   color: #4a4a4a;
+  padding: 20px;
+  background-color: #f7f3f0; /* Тот же фон, как у заголовка */
+  border-radius: 8px; /* Округление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень для текста */
 }
 
 /* Эффекты для текста в "О нас" */

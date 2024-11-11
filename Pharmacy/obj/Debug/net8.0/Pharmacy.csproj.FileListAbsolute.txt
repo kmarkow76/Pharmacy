@@ -29,3 +29,7 @@ D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net8.0\Pharmacy.pdb
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net8.0\Pharmacy.genruntimeconfig.cache
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net8.0\ref\Pharmacy.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.Domain.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.Domain.pdb
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net8.0\Pharmacy.csproj.AssemblyReference.cache
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\obj\Debug\net8.0\Pharmacy.csproj.Up2Date

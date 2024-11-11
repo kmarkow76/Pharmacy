@@ -18,18 +18,20 @@ body {
   margin-bottom: 20px; /* Отступ снизу, чтобы изображение не прижималось к футеру */
 }
 
-/* Навигация */
-.navbar {
-  background-color: #f8d7e5; /* Светло-розовый цвет навигации */
-}
-
 .navbar-nav .nav-link {
-  color: #370b0b; /* Тёмно-розовый цвет ссылок */
+  font-weight: bold;
+  color: #333;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 8px;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #0c0e10; /* Цвет при наведении */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff69b4;
+  background-color: #fce4ec;
 }
+
 #header-top {
   position: fixed; /* Фиксируем заголовок */
   top: 0; /* Ставим его в верхнюю часть экрана */
@@ -83,45 +85,6 @@ h1 {
   text-decoration: none; /* Убираем подчеркивание и при наведении */
   color: white; /* Оставляем цвет текста белым при наведении */
 }
-h1 {
-  font-size: 1.8em; /* Уменьшаем размер шрифта */
-  color: #370b0b;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Отступы между элементами уменьшены */
-  align-items: center;
-  margin-bottom: 10px; /* Уменьшаем отступ снизу */
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
-  color: #370b0b;
-}
-
-.contact-icon {
-  width: 30px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.contact-item p {
-  margin: 0;
-}
-
-#yandex-map {
-  width: 100%;
-  height: 400px;
-  margin-top: 0; /* Убираем верхний отступ */
-  margin-bottom: 10px; /* Легкий отступ снизу */
-}
-
 
 
 

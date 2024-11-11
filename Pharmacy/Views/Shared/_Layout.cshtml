@@ -6,8 +6,8 @@
     <title>@ViewData["Title"] - Elixir Emporium</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-
-    <link rel="icon" type="image/x-icon" href="~/icon.ico" />
+    <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true"/>
+    <link rel="icon" type="image/x-icon" href="~/icon.ico"/>
 </head>
 <body>
 <header id="header-top">
@@ -31,8 +31,11 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">О нас</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Services">Услуги</a>
+                    </li>
                 </ul>
-                <a class="btn-new ms-3" href="~/Account/Login">Войти</a>
+                <a class="btn-new ms-3" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
             </div>
         </div>
     </nav>
@@ -48,8 +51,8 @@
     <p>&copy; @DateTime.Now.Year - Эликсирный Дом</p>
     <p>Следите за нами в социальных сетях:</p>
     <p>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-        <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> 
+        <a href="https://www.instagram.com" target="_blank">Instagram</a> 
         <a href="https://www.twitter.com" target="_blank">Twitter</a>
     </p>
 </footer>
@@ -57,6 +60,25 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/services.js" asp-append-version="true"></script>
+<script src="~/js/navbar.js" asp-append-version="true"></script>
+
+<script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
+
+<!-- Модальное окно входа -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @Html.Partial("_LoginRegistrationPartial")
+            </div>
+        </div>
+    </div>
+</div>
+
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

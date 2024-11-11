@@ -1,0 +1,119 @@
+/* Основной контейнер */
+.login-registration-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Табы для переключения */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 12px;
+    width: 48%;
+    border: 1px solid #e1bee7; /* Мягкий сиреневый оттенок */
+    background-color: #f3e5f5; /* Светлый пастельный розовый */
+    color: #d81b60; /* Сильный розовый цвет для текста */
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs button:hover {
+    background-color: #f0f0f0;
+}
+
+.tabs button.active {
+    background-color: #d81b60; /* Тёмно-розовый для активного состояния */
+    color: white; /* Белый текст на активной кнопке */
+}
+
+/* Общие стили для форм */
+.form-container {
+    display: block;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff80ab; /* Мягкий розовый цвет */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #ff4081;
+}
+
+/* Настройки для модального окна */
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.btn-close {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #d81b60;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.btn-close:hover {
+    color: #c2185b;
+}
+input.error {
+    border: 2px solid red;
+}
+
+div.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

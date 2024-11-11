@@ -1,0 +1,12 @@
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\bin\Debug\net8.0\Pharmacy.Domain.deps.json
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\bin\Debug\net8.0\Pharmacy.Domain.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\bin\Debug\net8.0\Pharmacy.Domain.pdb
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.AssemblyInfoInputs.cache
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.AssemblyInfo.cs
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.csproj.CoreCompileInputs.cache
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.sourcelink.json
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\refint\Pharmacy.Domain.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\Pharmacy.Domain.pdb
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy.Domain\obj\Debug\net8.0\ref\Pharmacy.Domain.dll

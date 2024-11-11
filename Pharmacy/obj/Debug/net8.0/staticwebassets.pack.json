@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\css\\about.css"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\contacts.css",
+      "PackagePath": "staticwebassets\\css\\contacts.css"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\login_and_registration.css",
+      "PackagePath": "staticwebassets\\css\\login_and_registration.css"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\services.css",
+      "PackagePath": "staticwebassets\\css\\services.css"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -23,6 +35,26 @@
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\icon.ico",
       "PackagePath": "staticwebassets\\icon.ico"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\2.png",
+      "PackagePath": "staticwebassets\\images\\2.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\3.png",
+      "PackagePath": "staticwebassets\\images\\3.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\email.png",
@@ -47,6 +79,18 @@
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\Что-такое-фото.jpeg",
       "PackagePath": "staticwebassets\\images\\Что-такое-фото.jpeg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
+      "PackagePath": "staticwebassets\\js\\login_and_registration_script.js"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\js\\navbar.js"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\services.js",
+      "PackagePath": "staticwebassets\\js\\services.js"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\site.js",
