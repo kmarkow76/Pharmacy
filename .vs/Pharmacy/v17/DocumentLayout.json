@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Program.cs",
+              "RelativeDocumentMoniker": "Pharmacy\\Program.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Program.cs",
+              "RelativeToolTip": "Pharmacy\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:38:55.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\appsettings.json",
+              "RelativeDocumentMoniker": "Pharmacy\\appsettings.json",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\appsettings.json",
+              "RelativeToolTip": "Pharmacy\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-18T13:36:50.265Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -24,6 +24,8 @@ body {
   padding: 10px 15px;
   transition: color 0.3s, background-color 0.3s;
   border-radius: 8px;
+  margin: 0 5px;
+  
 }
 
 .navbar-nav .nav-link:hover,
@@ -78,6 +80,7 @@ h1 {
   font-size: 18px; /* Увеличим размер шрифта */
   text-decoration: none; /* Убираем подчеркивание */
   display: inline-block; /* Убедимся, что элемент ведет себя как кнопка */
+ 
 }
 
 .btn-new:hover {

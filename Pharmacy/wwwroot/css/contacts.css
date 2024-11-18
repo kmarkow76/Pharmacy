@@ -2,9 +2,9 @@ h1 {
   font-size: 1.8em;
   color: #370b0b;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   padding: 20px;
-  background-color: #f7f3f0; /* Цвет фона, как у .services-section */
+  background-color: #f7f3f0; /* Цвет фона, как у 
   border-radius: 8px; /* Немного округляем углы */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень, чтобы отделить заголовок от фона */
 }
@@ -13,9 +13,15 @@ h1 {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Отступы между элементами уменьшены */
   align-items: center;
-  margin-bottom: 10px; /* Уменьшаем отступ снизу */
+  gap: 15px;
+  font-size: 1.2em;
+  color: #370b0b;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f3f0; /* Фон совпадает с основным */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item {
@@ -39,7 +45,7 @@ h1 {
   width: 100%;
   height: 400px;
   margin-top: 0; /* Убираем верхний отступ */
-  margin-bottom: 10px; /* Легкий отступ снизу */
+  margin-bottom: 0px; /* Легкий отступ снизу */
 }
 .contact-info {
   background-color: #f7f3f0; /* Цвет фона как у services-section */
@@ -52,9 +58,9 @@ h1 {
 .container-section {
   width: 100%;
   padding: 20px;
-  background-color: #f9f9f9; /* Светлый фон для секции */
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f7f3f0; /* Основной светлый фон */
+  border-radius: 0px; /* Округленные углы для всех секций */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Унифицированная тень */
   margin-bottom: 20px;
 }
 
@@ -132,18 +138,4 @@ textarea.text:focus {
   background-color: #a02a6f; /* Темный розовый оттенок при наведении */
 }
 
-/* Мобильная адаптация */
-@media (max-width: 768px) {
-  .container-section {
-    padding: 15px;
-  }
 
-  .message-text {
-    margin-bottom: 15px;
-  }
-
-  .message-button .button {
-    width: 100%;
-    padding: 12px;
-  }
-}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XLK3GvNZUreKMXOQs5vicz7TZ2POolG2JouKQ0Cksuw=",
+  "Hash": "KgQUkCyZ21MCzQdeaoVLjHob76tqc8/6tef9RWqPWVk=",
   "Source": "Pharmacy",
   "BasePath": "_content/Pharmacy",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login_and_registration.css"
+    },
+    {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\media_style.css",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "css/media_style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\media_style.css"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\services.css",
@@ -321,6 +340,25 @@
       "OriginalItemSpec": "wwwroot\\images\\Что-такое-фото.jpeg"
     },
     {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\director1.jpg",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "images/director1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\director1.jpg"
+    },
+    {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\email.png",
       "SourceId": "Pharmacy",
       "SourceType": "Discovered",
@@ -397,6 +435,25 @@
       "OriginalItemSpec": "wwwroot\\images\\logo1.png"
     },
     {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\pharmacist1.jpg",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "images/pharmacist1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pharmacist1.jpg"
+    },
+    {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\phone.png",
       "SourceId": "Pharmacy",
       "SourceType": "Discovered",
@@ -414,6 +471,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\phone.png"
+    },
+    {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\chared_script.js",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "js/chared_script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chared_script.js"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",

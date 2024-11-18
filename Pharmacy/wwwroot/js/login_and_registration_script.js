@@ -27,7 +27,7 @@ function showRegisterForm() {
 // Функция для отображения ошибок
 function displayErrors(errors, container, formId) {
     container.innerHTML = ""; // Очищаем контейнер ошибок
-
+    console.log("Ошибки:", errors);
     // Проходим по всем ошибкам и выводим их
     errors.forEach(error => {
         const errorDiv = document.createElement("div");

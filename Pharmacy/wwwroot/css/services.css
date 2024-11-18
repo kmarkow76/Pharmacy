@@ -50,3 +50,8 @@
   font-size: 0.9em;
   color: #666;
 }
+@media (max-width: 600px) {
+  .service-item {
+    width: 100%;
+  }
+}
