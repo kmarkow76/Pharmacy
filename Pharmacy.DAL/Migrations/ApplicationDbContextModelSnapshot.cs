@@ -22,175 +22,117 @@ namespace Pharmacy.DAL.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Cart", b =>
+            modelBuilder.Entity("MedicineDbOrderDb", b =>
+                {
+                    b.Property<Guid>("MedicinesId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("OrdersId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("MedicinesId", "OrdersId");
+
+                    b.HasIndex("OrdersId");
+
+                    b.ToTable("MedicineDbOrderDb");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.CartDb", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("AddedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("added_at");
+                        .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("MedicineId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("medicine_id");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric")
-                        .HasColumnName("price");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer")
-                        .HasColumnName("quantity");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_id");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MedicineId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("cart");
-                });
-
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Category", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("description");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("category");
-                });
-
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Medicine", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("category_id");
-
-                    b.Property<TimeSpan>("CreatedAt")
-                        .HasColumnType("interval")
-                        .HasColumnName("created_at");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("description");
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("image");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("name");
-
-                    b.Property<bool>("PrescriptionRequired")
-                        .HasColumnType("boolean")
-                        .HasColumnName("prescription_required");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric")
-                        .HasColumnName("price");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("medicines");
-                });
-
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Order", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<TimeSpan>("CreatedAt")
-                        .HasColumnType("interval")
-                        .HasColumnName("created_at");
-
-                    b.Property<Guid>("MedicId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("medic_id");
+                    b.Property<Guid>("MedicineDbId")
+                        .HasColumnType("uuid");
 
                     b.Property<Guid>("MedicineId")
                         .HasColumnType("uuid");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnName("status");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
 
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("numeric")
-                        .HasColumnName("total_price");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
 
                     b.Property<Guid>("UserId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_id");
+                        .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MedicineId");
+                    b.HasIndex("MedicineDbId");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("order");
+                    b.ToTable("CartDb");
                 });
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Record", b =>
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.CategoryDb", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("description");
+                        .HasColumnType("text");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("email");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("record");
+                    b.ToTable("CategoryDb");
                 });
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.User", b =>
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.MedicineDb", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CategoryDbId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<TimeSpan>("CreatedAt")
+                        .HasColumnType("interval");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("PrescriptionRequired")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryDbId");
+
+                    b.ToTable("MedicineDb");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.OrderDb", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -198,6 +140,51 @@ namespace Pharmacy.DAL.Migrations
 
                     b.Property<TimeSpan>("CreatedAt")
                         .HasColumnType("interval");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("OrderDb");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.RecordDb", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RecordDb");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.UserDb", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp")
+                        .HasColumnName("CreatedAt");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -224,56 +211,80 @@ namespace Pharmacy.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("UserDb");
                 });
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Cart", b =>
+            modelBuilder.Entity("MedicineDbOrderDb", b =>
                 {
-                    b.HasOne("Pharmacy.Domain.ModelsDb.Medicine", "Medicine")
+                    b.HasOne("Pharmacy.Domain.ModelsDb.MedicineDb", null)
                         .WithMany()
-                        .HasForeignKey("MedicineId")
+                        .HasForeignKey("MedicinesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Pharmacy.Domain.ModelsDb.User", "User")
+                    b.HasOne("Pharmacy.Domain.ModelsDb.OrderDb", null)
                         .WithMany()
+                        .HasForeignKey("OrdersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.CartDb", b =>
+                {
+                    b.HasOne("Pharmacy.Domain.ModelsDb.MedicineDb", "MedicineDb")
+                        .WithMany("Carts")
+                        .HasForeignKey("MedicineDbId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pharmacy.Domain.ModelsDb.UserDb", "User")
+                        .WithMany("Carts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Medicine");
+                    b.Navigation("MedicineDb");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Medicine", b =>
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.MedicineDb", b =>
                 {
-                    b.HasOne("Pharmacy.Domain.ModelsDb.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
+                    b.HasOne("Pharmacy.Domain.ModelsDb.CategoryDb", "CategoryDb")
+                        .WithMany("Medicines")
+                        .HasForeignKey("CategoryDbId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.Navigation("CategoryDb");
                 });
 
-            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.Order", b =>
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.OrderDb", b =>
                 {
-                    b.HasOne("Pharmacy.Domain.ModelsDb.Medicine", "Medicine")
-                        .WithMany()
-                        .HasForeignKey("MedicineId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Pharmacy.Domain.ModelsDb.User", "User")
-                        .WithMany()
+                    b.HasOne("Pharmacy.Domain.ModelsDb.UserDb", "User")
+                        .WithMany("Orders")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Medicine");
-
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.CategoryDb", b =>
+                {
+                    b.Navigation("Medicines");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.MedicineDb", b =>
+                {
+                    b.Navigation("Carts");
+                });
+
+            modelBuilder.Entity("Pharmacy.Domain.ModelsDb.UserDb", b =>
+                {
+                    b.Navigation("Carts");
+
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

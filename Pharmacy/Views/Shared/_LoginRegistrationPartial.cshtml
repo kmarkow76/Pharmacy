@@ -1,53 +1,68 @@
-﻿
-<div class="login-registration-container">
-    <div class="tabs">
-        <button id="login-tab" class="active" onclick="showLoginForm()">Войти</button>
-        <button id="register-tab" onclick="showRegisterForm()">Зарегистрироваться</button>
-    </div>
+﻿<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content login-modal">
+            <div class="modal-header">
+                <button id="login-tab" class="tab active" onclick="showLoginForm()">Вход</button>
+                <span>|</span>
+                <button id="register-tab" class="tab" onclick="showRegisterForm()">Регистрация</button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Форма логина -->
+                <div class="form-container" id="form_signin" style="display: block;">
+                    <form id="signin-form">
+                        <div class="input-group">
+                            <input type="text" id="username" name="username" placeholder="Почта" required />
+                        </div>
+                        <div class="input-group password-group">
+                            <input type="password" id="password" name="password" placeholder="Пароль" required />
+                            <button type="button" class="toggle-password">
+                                <img src="~/icons/Hide.svg" alt="Show Password" />
+                            </button>
+                        </div>
+                        <div id="error-messages-signin"></div>
+                        <button type="button" class="btn-primary" onclick="login()">Вход</button>
+                    </form>
+                    <p class="or-text">Или войти с помощью</p>
+                    <div class="social-buttons">
+                        <button class="social-btn">
+                            <img src="~/icons/google.svg" alt="Google" /> Войти с помощью Google
+                        </button>
+                    </div>
+                </div>
 
-    <!-- Форма входа -->
-    <div class="form-container" id="form_signin" style="display:block;">
-        <h2>Вход</h2>
-        <div id="error-messages-signin"></div>
-        <form>
-            <div>
-                <label for="username">Почта:</label>
-                <input type="text" id="username" name="username" required />
+                <!-- Форма регистрации -->
+                <div class="form-container" id="form_signup" style="display: none;">
+                    <form  id="signup-form">
+                        <div class="input-group">
+                            <input type="text" id="reg-username" name="username" placeholder="Логин" required />
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="reg-email" name="email" placeholder="Почта" required />
+                        </div>
+                        <div class="input-group password-group">
+                            <input type="password" id="reg-password" name="password" placeholder="Пароль" required />
+                            <button type="button" class="toggle-password">
+                                <img src="~/icons/Hide.svg" alt="Show Password" />
+                            </button>
+                        </div>
+                        <div class="input-group password-group">
+                            <input type="password" id="reg-password-confirm" name="passwordConfirm" placeholder="Подтвердите пароль" required />
+                            <button type="button" class="toggle-password">
+                                <img src="~/icons/Hide.svg" alt="Show Password" />
+                            </button>
+                        </div>
+                        <div id="error-messages-signup"></div>
+                        <button type="button" class="btn-primary" onclick="register()">Зарегистрироваться</button>
+                    </form>
+                    <p class="or-text">Или зарегистрироваться с помощью</p>
+                    <div class="social-buttons">
+                        <button class="social-btn">
+                            <img src="~/icons/google.svg" alt="Google" /> Зарегистрироваться с помощью Google
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-            <div>
-                <button type="button" onclick="login()">Войти</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Форма регистрации -->
-    <div class="form-container" id="form_signup" style="display:none;">
-        <h2>Регистрация</h2>
-        <div id="error-messages-signup"></div>
-        <form>
-            <div>
-                <label for="reg-username">Имя пользователя:</label>
-                <input type="text" id="reg-username" name="username" required />
-            </div>
-            <div>
-                <label for="reg-email">Email:</label>
-                <input type="email" id="reg-email" name="email" required />
-            </div>
-            <div>
-                <label for="reg-password">Пароль:</label>
-                <input type="password" id="reg-password" name="password" required />
-            </div>
-            <div>
-                <label for="reg-password-confirm">Подтвердите пароль:</label>
-                <input type="password" id="reg-password-confirm" name="password-confirm" required />
-            </div>
-            <div>
-                <button type="button" onclick="register()">Зарегистрироваться</button>
-            </div>
-        </form>
+        </div>
     </div>
 </div>

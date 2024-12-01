@@ -11,12 +11,12 @@ public class ApplicationDbContext : DbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
         : base(options) { }
 
-    public DbSet<User> Users { get; set; }
-    public DbSet<Medicine> Medicines { get; set; }
-    public DbSet<Order> Orders { get; set; }
-    public DbSet<Category> Categories { get; set; }
-    public DbSet<Record> Records { get; set; }
-    public DbSet<Cart> Carts { get; set; }
+    public DbSet<UserDb> UserDb { get; set; }
+    public DbSet<MedicineDb> MedicineDb{ get; set; }
+    public DbSet<OrderDb> OrderDb { get; set; }
+    public DbSet<CategoryDb> CategoryDb { get; set; }
+    public DbSet<RecordDb> RecordDb { get; set; }
+    public DbSet<CartDb> CartDb { get; set; }
 
 }
 

@@ -2,30 +2,41 @@
 ViewData["Title"] = "Контакты";
 }
 
-<h1>Контакты</h1>
+<h1 class="page-title">Контакты</h1>
+
 <div class="contact-info">
     <div class="contact-item">
-        <img src="~/images/phone.png" alt="Телефон" class="contact-icon"/>
-        <p>Телефон: +373 (777) 69 188</p>
+        <img src="~/icons/Calling.svg" alt="Телефон" class="contact-icon"/>
+        <p><strong>Телефон:</strong> +373 (777) 69 188</p>
     </div>
     <div class="contact-item">
-        <img src="~/images/email.png" alt="Email" class="contact-icon"/>
-        <p>Email: elexhouse@gmail.com</p>
+        <img src="~/icons/Message.svg" alt="Email" class="contact-icon"/>
+        <p><strong>Email:</strong> elexhouse@gmail.com</p>
     </div>
     <div class="contact-item">
-        <img src="~/images/location.png" alt="Адрес" class="contact-icon"/>
-        <p>Адрес: пр. Магистральный, 12, Приднестровье, Тирасполь</p>
+        <img src="~/icons/Location.svg" alt="Адрес" class="contact-icon"/>
+        <p><strong>Адрес:</strong> пр. Магистральный, 12, Приднестровье, Тирасполь</p>
     </div>
-   
 </div>
+
+<div class="photo-section">
+    <div class="photo-block">
+        <img src="~/images/director1.jpg" alt="Директор компании" class="person-photo"/>
+        <p>Директор компании</p>
+    </div>
+    <div class="photo-block">
+        <img src="~/images/pharmacist1.jpg" alt="Фармацевт-провизор" class="person-photo"/>
+        <p>Фармацевт-провизор</p>
+    </div>
+</div>
+
 <div class="container-section">
     <h2 class="info-sections">Написать сообщение</h2>
     <div class="block-message">
-        <p>Вы можете написать нам на почту здесь</p> <!-- Исправлен тег <р> на <p> -->
+        <p>Вы можете написать нам на почту здесь</p>
         <div class="message-text">
-            <label for="message-textarea">Сообщение:</label> <!-- Добавлен атрибут for -->
-            <span></span>
-            <textarea class="text" id="message-textarea"></textarea> <!-- Добавлен id для textarea -->
+            <label for="message-textarea">Сообщение:</label>
+            <textarea class="text" id="message-textarea" placeholder="Введите текст вашего сообщения"></textarea>
         </div>
         <div class="message-button">
             <button class="button" type="submit">Отправить</button>
@@ -33,7 +44,6 @@ ViewData["Title"] = "Контакты";
     </div>
 </div>
 
-<div id="yandex-map" style="width: 100%; height: 50px; margin-bottom: 20px;"></div>
-
+<div id="yandex-map" style="width: 100%; height: 40px; margin-bottom: 20px;"></div>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64c044e180bededa52354c0a0c76429e91f2899586f07a98586bf987c10246d6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 <link rel="stylesheet" href="~/css/contacts.css" asp-append-version="true"/>

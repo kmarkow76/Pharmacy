@@ -107,3 +107,10 @@ D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.DAL.dll
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.DAL.pdb
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\AutoMapper.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.Service.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Pharmacy.Service.pdb
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\FluentValidation.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\MailKit.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\MimeKit.dll

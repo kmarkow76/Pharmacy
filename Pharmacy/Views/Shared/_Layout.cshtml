@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/media_style.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true">
     <link rel="icon" type="image/x-icon" href="~/icon.ico"/>
 </head>
 <body>
@@ -27,36 +28,71 @@
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Каталог</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts">Товар</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts">Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Services">Услуги</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">О компании</a>
                     </li>
                 </ul>
-                <a class="btn-new ms-3" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
+                <div class="d-flex ms-3">
+                    <!-- Кнопка поиска как иконка -->
+                    <a href="#" id="search-button" class="btn">
+                        <img src="~/images/search.svg" alt="Search" style="height: 20px;"/>
+                    </a>
+
+                    <!-- Кнопка корзины как иконка -->
+                    <a href="#" id="cart-button" class="btn ms-2">
+                        <img src="~/images/cart.svg" alt="Cart" style="height: 20px;"/>
+                    </a>
+                    <a href="#" id="cart-button" class="btn ms-2">
+                        <img src="~/images/user.png" alt="User" style="height: 20px;"/>
+                    </a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                    <button class="btn-new ms-3" type="button" onclick="window.location.href = '@Url.Action("Logout", "Home")'">Выйти</button>
+                    }
+                    else
+                    {
+                    <a class="btn-new ms-3" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
+                    }
+                </div>
             </div>
         </div>
     </nav>
 </header>
+
 
 <div class="container">
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
 </div>
+<div class="container-login-registration">
+    @await Html.PartialAsync("_LoginRegistrationPartial")
+</div>
+<div class="confirm-email-container">
 
-<footer class="text-center py-3">
-    <p>&copy; @DateTime.Now.Year - Эликсирный Дом</p>
+    @await Html.PartialAsync("_ConfirmEmailPartial")
+</div>
+<footer class="text-center py-3" style="background-color: #fff0fa;">
+    <p>&copy; @DateTime.Now.Year - PillParadise</p>
     <p>Следите за нами в социальных сетях:</p>
     <p>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> 
-        <a href="https://www.instagram.com" target="_blank">Instagram</a> 
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="~/icons/Facebook.svg" alt="Facebook" style="width: 24px; height: 24px; margin-right: 10px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="~/icons/Instagram.svg" alt="Instagram" style="width: 24px; height: 24px; margin-right: 10px;">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="~/icons/Twitter.svg" alt="Twitter" style="width: 24px; height: 24px; margin-right: 10px;">
+        </a>
     </p>
 </footer>
+
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -65,21 +101,10 @@
 <script src="~/js/navbar.js" asp-append-version="true"></script>
 <script src="~/js/chared_script.js" asp-append-version="true"></script>
 <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
+<script src="~/js/home.js" asp-append-version="true"></script>
 
-<!-- Модальное окно входа -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                @Html.Partial("_LoginRegistrationPartial")
-            </div>
-        </div>
-    </div>
-</div>
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

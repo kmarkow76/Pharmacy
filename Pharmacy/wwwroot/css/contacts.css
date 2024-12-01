@@ -1,141 +1,101 @@
-h1 {
-  font-size: 1.8em;
-  color: #370b0b;
-  text-align: center;
-  margin-bottom: 0px;
-  padding: 20px;
-  background-color: #f7f3f0; /* Цвет фона, как у 
-  border-radius: 8px; /* Немного округляем углы */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень, чтобы отделить заголовок от фона */
+/* Общий стиль страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
 
 .contact-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  font-size: 1.2em;
-  color: #370b0b;
-  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
   padding: 20px;
-  background-color: #f7f3f0; /* Фон совпадает с основным */
+  background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  font-size: 1.2em;
-  color: #370b0b;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .contact-icon {
-  width: 30px;
-  height: auto;
-  margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }
 
-.contact-item p {
-  margin: 0;
+.photo-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
 }
 
-#yandex-map {
-  width: 100%;
-  height: 400px;
-  margin-top: 0; /* Убираем верхний отступ */
-  margin-bottom: 0px; /* Легкий отступ снизу */
-}
-.contact-info {
-  background-color: #f7f3f0; /* Цвет фона как у services-section */
-  padding: 20px;
-  border-radius: 8px; /* Слегка округляем углы */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем легкую тень */
+.photo-block {
   text-align: center;
 }
-/* Контейнер секции */
-.container-section {
-  width: 100%;
-  padding: 20px;
-  background-color: #f7f3f0; /* Основной светлый фон */
-  border-radius: 0px; /* Округленные углы для всех секций */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Унифицированная тень */
-  margin-bottom: 20px;
-}
 
-/* Заголовок секции */
-.info-sections {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-/* Блок с сообщением */
-.block-message {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Текстовое описание */
-.block-message p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-/* Контейнер для ввода текста */
-.message-text {
-  margin-bottom: 20px;
-}
-
-/* Метка для поля ввода */
-.message-text label {
-  font-size: 1rem;
-  color: #333;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Стиль для текста в textarea */
-textarea.text {
-  width: 100%;
+.person-photo {
+  width: 150px;
   height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.container-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.info-sections {
+  color: #5c2d91;
+  margin-bottom: 15px;
+}
+
+.block-message {
+  text-align: center;
+}
+
+.message-text textarea {
+  width: 100%;
+  height: 100px;
   padding: 10px;
-  font-size: 1rem;
+  margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical; /* Можно изменять размер по вертикали */
-  transition: border-color 0.3s;
+  resize: none;
 }
 
-/* Изменение цвета border при фокусе */
-textarea.text:focus {
-  border-color: #b34093; /* Розовый оттенок */
-  outline: none;
-}
-
-/* Стиль для кнопки отправки */
 .message-button {
-  text-align: center;
+  margin-top: 10px;
 }
 
 .message-button .button {
-  padding: 10px 25px;
-  font-size: 1rem;
-  background-color: #b34093;
-  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #5c2d91;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .message-button .button:hover {
-  background-color: #a02a6f; /* Темный розовый оттенок при наведении */
+  background-color: #432072;
 }
-
-

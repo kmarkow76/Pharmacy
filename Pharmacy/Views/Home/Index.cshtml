@@ -1,7 +1,131 @@
 ﻿@{
-ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="image-container">
-    <img src="~/images/fon.jpg" alt="Scrollable Image" style="width: 100%; height: auto;"/>
+<div class="main-banner">
+    <!-- Rectangle 3 (фон с градиентом) -->
+    <div class="rectangle-3">
+        <!-- Блок с изображением (01 1) -->
+        <div class="image-block">
+            <img src="~/images/bunch-medical-pills-tablets.png" alt="Medications" />
+        </div>
+
+        <!-- Заголовок -->
+        <div class="welcome-text">
+            Welcome to GreenShop
+        </div>
+
+        <!-- Описание -->
+        <div class="shop-description">
+            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
+        </div>
+
+        <!-- Кнопка "SHOP NOW" -->
+        <div class="shop-now">
+            <a href="#catalog" class="shop-now-btn">SHOP NOW</a>
+        </div>
+    </div>
 </div>
+
+<div class="content-container">
+    <!-- Секция категорий -->
+    <aside class="categories-section">
+        <h3>Категории</h3>
+        <ul class="category-list">
+            <li><a href="#" class="category-link" data-category="herbal">Растительные препараты</a></li>
+            <li><a href="#" class="category-link" data-category="medicine">Лекарственные средства</a></li>
+            <li><a href="#" class="category-link" data-category="vitamins">Витамины и добавки</a></li>
+            <li><a href="#" class="category-link" data-category="cosmetics">Косметика</a></li>
+            <li><a href="#" class="category-link" data-category="accessories">Аксессуары</a></li>
+        </ul>
+    </aside>
+
+    <!-- Секция каталога -->
+    <main id="catalog" class="catalog-section">
+        <div class="catalog-grid">
+            <!-- Пример товара -->
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="~/images/108.jpg" alt="Название товара">
+                <h4 class="product-title">Название товара</h4>
+                <p class="product-price">Цена: 299₽</p>
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+            <!-- Повтор для остальных товаров -->
+        </div>
+
+        <!-- Пагинация -->
+        <div class="pagination">
+            <a href="#1" class="pagination-link">1</a>
+            <a href="#2" class="pagination-link">2</a>
+            <a href="#3" class="pagination-link">3</a>
+            <a href="#4" class="pagination-link">4</a>
+        </div>
+    </main>
+</div>
+

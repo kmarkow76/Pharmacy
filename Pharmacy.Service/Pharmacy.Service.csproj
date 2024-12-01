@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="MailKit" Version="4.8.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Pharmacy.DAL\Pharmacy.DAL.csproj" />
+      <ProjectReference Include="..\Pharmacy.Domain\Pharmacy.Domain.csproj" />
     </ItemGroup>
 
 </Project>
