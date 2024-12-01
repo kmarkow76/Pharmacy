@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jJaaXFiFPARjo4pzrhGlnB89DWBngTAcbG4DUwLZj8w=",
+  "Hash": "9L12ntYGcfhBmMYJNk49e1aGNFl0giyb8GuxQyL03SE=",
   "Source": "Pharmacy",
   "BasePath": "_content/Pharmacy",
   "Mode": "Default",
@@ -148,25 +148,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login_and_registration.css"
-    },
-    {
-      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\login.css",
-      "SourceId": "Pharmacy",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
-      "BasePath": "_content/Pharmacy",
-      "RelativePath": "css/login.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\media_style.css",
@@ -832,25 +813,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login_and_registration_script.js"
-    },
-    {
-      "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_registration.js",
-      "SourceId": "Pharmacy",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\",
-      "BasePath": "_content/Pharmacy",
-      "RelativePath": "js/login_registration.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\login_registration.js"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\navbar.js",

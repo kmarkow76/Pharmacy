@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
-    },
-    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\login_and_registration.css",
       "PackagePath": "staticwebassets\\css\\login_and_registration.css"
     },
@@ -167,10 +163,6 @@
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
       "PackagePath": "staticwebassets\\js\\login_and_registration_script.js"
-    },
-    {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_registration.js",
-      "PackagePath": "staticwebassets\\js\\login_registration.js"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\js\\navbar.js",

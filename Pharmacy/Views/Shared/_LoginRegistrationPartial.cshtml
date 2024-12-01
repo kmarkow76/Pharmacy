@@ -54,6 +54,11 @@
                         </div>
                         <div id="error-messages-signup"></div>
                         <button type="button" class="btn-primary" onclick="register()">Зарегистрироваться</button>
+                        <input type="hidden" id="generated-code" />
+                        <div class="input-group" id="confirmation-code-container" style="display: none;">
+                            <input type="text" id="confirmation-code" name="confirmation-code" placeholder="Введите код из письма" required />
+                        </div>
+                        <button type="button" class="btn-primary" id="confirm-email-btn" style="display: none;" onclick="confirmEmail()">Подтвердить email</button>
                     </form>
                     <p class="or-text">Или зарегистрироваться с помощью</p>
                     <div class="social-buttons">

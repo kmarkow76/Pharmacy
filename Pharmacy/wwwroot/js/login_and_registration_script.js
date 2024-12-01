@@ -76,14 +76,16 @@ async function register() {
 
             // Очищаем и закрываем форму регистрации
             cleaningAndClosingForm("#signup-form", errorContainer);
-
-            // Информируем пользователя, что проверка почты требуется
-            errorContainer.innerHTML = "<div class='success'>На вашу почту отправлена ссылка для подтверждения регистрации. Пожалуйста, проверьте почту!</div>";
+            
+            // Показываем поле для ввода кода подтверждения
+            document.getElementById("confirmation-code-container").style.display = "block";
+            document.getElementById("confirm-email-btn").style.display = "block"; // Показываем кнопку подтверждения
         }
     } catch (error) {
         console.error("Ошибка регистрации:", error);
     }
 }
+
 
 // Функция для отображения ошибок
 function displayErrors(errors, errorContainer, formId) {
@@ -134,5 +136,71 @@ function hiddenOpen_Closeclick(container, forceDisplay = null) {
         } else {
             element.style.display = element.style.display === "none" || element.style.display === "" ? "block" : "none";
         }
+    }
+}
+
+// Функция для подтверждения почты
+async function confirmEmail() {
+    const confirmationCode = document.getElementById("confirmation-code").value.trim();
+    const generatedCode = document.getElementById("generated-code")?.value.trim(); // Получаем сгенерированный код
+    const errorContainer = document.getElementById("error-messages-signup");
+
+    errorContainer.innerHTML = ''; // Очистка ошибок
+
+    if (!confirmationCode) {
+        errorContainer.innerHTML = "<div class='error'>Введите код для подтверждения</div>";
+        return;
+    }
+
+    if (!generatedCode) {
+        console.error("Generated code отсутствует");
+        errorContainer.innerHTML = "<div class='error'>Ошибка: код подтверждения не найден</div>";
+        return;
+    }
+
+    const body = {
+        CodeConfirm: confirmationCode,
+        GeneratedCode: generatedCode,
+    };
+
+    try {
+        const response = await fetch('/Home/ConfirmEmail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+
+        const result = await response.json();
+        console.log("Ответ сервера:", result);
+
+        if (result.success) {
+            hiddenOpen_Closeclick(".confirm-email-container");
+            location.reload(); // Обновляем страницу
+        } else {
+            errorContainer.innerHTML = `<div class='error'>${result.errors || "Ошибка подтверждения"}</div>`;
+        }
+    } catch (error) {
+        console.error("Ошибка подтверждения:", error);
+        errorContainer.innerHTML = `<div class='error'>Ошибка: ${error.message}</div>`;
+    }
+}
+
+
+
+
+// Функция для отправки запроса
+async function sendRequest(method, url, body) {
+    try {
+        const response = await fetch(url, {
+            method: method,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        });
+        return await response.json();
+    } catch (error) {
+        console.error("Ошибка отправки запроса:", error);
+        throw error;
     }
 }
