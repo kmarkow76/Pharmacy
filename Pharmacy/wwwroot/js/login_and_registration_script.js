@@ -50,7 +50,8 @@ async function register() {
 
     errorContainer.innerHTML = ''; // Очистка ошибок
 
-    if (password !== confirmPassword) {
+    if (password !== confirmPassword)
+    {
         errorContainer.innerHTML = "<div class='error'>Пароли не совпадают</div>";
         return;
     }
@@ -70,13 +71,17 @@ async function register() {
         const result = await response.json();
 
         if (!response.ok) {
-            displayErrors(result, errorContainer, "form_signup");
+            displayErrors(result.errors, errorContainer, "form_signup");
         } else {
             console.log("Регистрация успешна:", result);
 
+            // Сохраняем сгенерированный код для использования при подтверждении
+            const confirmationCode = result.confirmationCode;
+            document.getElementById("generated-code").value = confirmationCode; // Сохраняем в скрытом поле
+
             // Очищаем и закрываем форму регистрации
             cleaningAndClosingForm("#signup-form", errorContainer);
-            
+
             // Показываем поле для ввода кода подтверждения
             document.getElementById("confirmation-code-container").style.display = "block";
             document.getElementById("confirm-email-btn").style.display = "block"; // Показываем кнопку подтверждения
@@ -85,6 +90,7 @@ async function register() {
         console.error("Ошибка регистрации:", error);
     }
 }
+
 
 
 // Функция для отображения ошибок
@@ -140,9 +146,8 @@ function hiddenOpen_Closeclick(container, forceDisplay = null) {
 }
 
 // Функция для подтверждения почты
-async function confirmEmail() {
-    const confirmationCode = document.getElementById("confirmation-code").value.trim();
-    const generatedCode = document.getElementById("generated-code")?.value.trim(); // Получаем сгенерированный код
+function confirmEmail() {
+    const confirmationCode = document.getElementById('confirmation-code').value.trim();
     const errorContainer = document.getElementById("error-messages-signup");
 
     errorContainer.innerHTML = ''; // Очистка ошибок
@@ -152,40 +157,44 @@ async function confirmEmail() {
         return;
     }
 
+    // Получаем данные для подтверждения
+    const username = document.getElementById("reg-username").value.trim();
+    const email = document.getElementById("reg-email").value.trim();
+    const password = document.getElementById("reg-password").value.trim();
+    const confirmPassword = document.getElementById("reg-password-confirm").value.trim();
+    const generatedCode = document.getElementById("generated-code").value.trim(); // Получаем сгенерированный код
+
+    // Проверка, что все данные присутствуют
     if (!generatedCode) {
-        console.error("Generated code отсутствует");
         errorContainer.innerHTML = "<div class='error'>Ошибка: код подтверждения не найден</div>";
         return;
     }
 
     const body = {
         CodeConfirm: confirmationCode,
-        GeneratedCode: generatedCode,
+        GeneratedCode: generatedCode, // Используем значение из скрытого поля
+        Login: username,
+        Email: email,
+        Password: password,
+        PasswordConfirm: confirmPassword
     };
 
-    try {
-        const response = await fetch('/Home/ConfirmEmail', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(body),
+    // Отправляем запрос
+    sendRequest('POST', '/Home/ConfirmEmail', body)
+        .then(data => {
+            console.log("Код подтверждения:", data);
+            if (data.success) {
+                hiddenOpen_Closeclick(".confirm-email-container");
+                location.reload(); // Обновляем страницу
+            } else {
+                displayErrors(data.errors, errorContainer);
+            }
+        })
+        .catch(err => {
+            displayErrors(err, errorContainer);
+            console.log(err);
         });
-
-        const result = await response.json();
-        console.log("Ответ сервера:", result);
-
-        if (result.success) {
-            hiddenOpen_Closeclick(".confirm-email-container");
-            location.reload(); // Обновляем страницу
-        } else {
-            errorContainer.innerHTML = `<div class='error'>${result.errors || "Ошибка подтверждения"}</div>`;
-        }
-    } catch (error) {
-        console.error("Ошибка подтверждения:", error);
-        errorContainer.innerHTML = `<div class='error'>Ошибка: ${error.message}</div>`;
-    }
 }
-
-
 
 
 // Функция для отправки запроса

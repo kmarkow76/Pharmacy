@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6AB4FDD-3A81-4104-BA73-9E98C5C4E6F7}|Pharmacy.Service\\Pharmacy.Service.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy.service\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6AB4FDD-3A81-4104-BA73-9E98C5C4E6F7}|Pharmacy.Service\\Pharmacy.Service.csproj|solutionrelative:pharmacy.service\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AA120C-D5BE-4237-807B-18BECDD0E9F1}|Pharmacy.Domain\\Pharmacy.Domain.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy.domain\\viewmodels\\loginandregistration\\confirmemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AA120C-D5BE-4237-807B-18BECDD0E9F1}|Pharmacy.Domain\\Pharmacy.Domain.csproj|solutionrelative:pharmacy.domain\\viewmodels\\loginandregistration\\confirmemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\views\\shared\\_confirmemailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\views\\shared\\_confirmemailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\wwwroot\\css\\media_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\wwwroot\\css\\media_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\views\\shared\\_confirmemailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\views\\shared\\_confirmemailpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\wwwroot\\js\\navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -49,14 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy\\wwwroot\\js\\services.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{11FEA25B-3E89-42B6-9B2E-9141F659BC13}|Pharmacy\\Pharmacy.csproj|solutionrelative:pharmacy\\wwwroot\\js\\services.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22AA120C-D5BE-4237-807B-18BECDD0E9F1}|Pharmacy.Domain\\Pharmacy.Domain.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy.domain\\viewmodels\\loginandregistration\\confirmemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22AA120C-D5BE-4237-807B-18BECDD0E9F1}|Pharmacy.Domain\\Pharmacy.Domain.csproj|solutionrelative:pharmacy.domain\\viewmodels\\loginandregistration\\confirmemailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6AB4FDD-3A81-4104-BA73-9E98C5C4E6F7}|Pharmacy.Service\\Pharmacy.Service.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0437\u0438\u043C\u043D\u044F\u044F)\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\pharmacy\\pharmacy.service\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6AB4FDD-3A81-4104-BA73-9E98C5C4E6F7}|Pharmacy.Service\\Pharmacy.Service.csproj|solutionrelative:pharmacy.service\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,120 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Service\\Service\\AccountService.cs",
+              "RelativeDocumentMoniker": "Pharmacy.Service\\Service\\AccountService.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Service\\Service\\AccountService.cs",
+              "RelativeToolTip": "Pharmacy.Service\\Service\\AccountService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAewGsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:37:37.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pharmacy\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pharmacy\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAewFYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:30:00.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfirmEmailViewModel.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
+              "RelativeDocumentMoniker": "Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
+              "RelativeToolTip": "Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T13:33:31.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "login_and_registration_script.js",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
+              "RelativeDocumentMoniker": "Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js*",
+              "RelativeToolTip": "Pharmacy\\wwwroot\\js\\login_and_registration_script.js*",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAALMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-28T13:34:10.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ConfirmEmailPartial.cshtml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
+              "RelativeToolTip": "Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:22:06.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_LoginRegistrationPartial.cshtml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "RelativeToolTip": "Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T13:57:38.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Services.cshtml",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "Pharmacy\\Views\\Home\\Services.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:59:43.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Pharmacy\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:59:43.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contacts.cshtml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Contacts.cshtml",
+              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Contacts.cshtml",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Contacts.cshtml",
+              "RelativeToolTip": "Pharmacy\\Views\\Home\\Contacts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:59:45.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "media_style.css",
               "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\css\\media_style.css",
               "RelativeDocumentMoniker": "Pharmacy\\wwwroot\\css\\media_style.css",
@@ -87,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "About.cshtml",
               "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\About.cshtml",
@@ -95,77 +208,11 @@
               "RelativeToolTip": "Pharmacy\\Views\\Home\\About.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:59:46.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:59:46.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Contacts.cshtml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Contacts.cshtml",
-              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Contacts.cshtml",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Contacts.cshtml",
-              "RelativeToolTip": "Pharmacy\\Views\\Home\\Contacts.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:59:45.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Pharmacy\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:59:43.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Services.cshtml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Services.cshtml",
-              "RelativeDocumentMoniker": "Pharmacy\\Views\\Home\\Services.cshtml",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Home\\Services.cshtml",
-              "RelativeToolTip": "Pharmacy\\Views\\Home\\Services.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:59:43.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LoginRegistrationPartial.cshtml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "RelativeDocumentMoniker": "Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml*",
-              "RelativeToolTip": "Pharmacy\\Views\\Shared\\_LoginRegistrationPartial.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T13:57:38.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Pharmacy\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Pharmacy\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T12:30:00.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "services.js",
               "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\services.js",
               "RelativeDocumentMoniker": "Pharmacy\\wwwroot\\js\\services.js",
@@ -173,12 +220,11 @@
               "RelativeToolTip": "Pharmacy\\wwwroot\\js\\services.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-28T14:56:45.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:56:45.477Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "navbar.js",
               "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\navbar.js",
               "RelativeDocumentMoniker": "Pharmacy\\wwwroot\\js\\navbar.js",
@@ -186,12 +232,11 @@
               "RelativeToolTip": "Pharmacy\\wwwroot\\js\\navbar.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-28T14:27:52.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:27:52.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pharmacy\\Views\\Shared\\_Layout.cshtml",
@@ -199,60 +244,7 @@
               "RelativeToolTip": "Pharmacy\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:58:14.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "login_and_registration_script.js",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
-              "RelativeDocumentMoniker": "Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
-              "RelativeToolTip": "Pharmacy\\wwwroot\\js\\login_and_registration_script.js",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAiwN8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-28T13:34:10.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ConfirmEmailPartial.cshtml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
-              "RelativeDocumentMoniker": "Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
-              "RelativeToolTip": "Pharmacy\\Views\\Shared\\_ConfirmEmailPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:22:06.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Service\\Service\\AccountService.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Service\\Service\\AccountService.cs",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Service\\Service\\AccountService.cs",
-              "RelativeToolTip": "Pharmacy.Service\\Service\\AccountService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAhwFYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T12:37:37.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ConfirmEmailViewModel.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
-              "RelativeDocumentMoniker": "Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
-              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430(\u0417\u0438\u043C\u043D\u044F\u044F)\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\Pharmacy\\Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
-              "RelativeToolTip": "Pharmacy.Domain\\ViewModels\\LoginAndRegistration\\ConfirmEmailViewModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T13:33:31.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T14:58:14.156Z"
             }
           ]
         }
