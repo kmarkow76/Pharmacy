@@ -114,3 +114,4 @@ D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\MailKit.dll
 D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\MimeKit.dll
+D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

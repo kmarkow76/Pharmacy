@@ -213,3 +213,12 @@ async function sendRequest(method, url, body) {
         throw error;
     }
 }
+const googleButtons = document.querySelectorAll('.social-btn'); // гугл
+
+if (googleButtons) {
+    googleButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            window.location.href = `/Home/AuthenticationGoogle?returnUrl=${encodeURIComponent(window.location.href)}`;
+        });
+    });
+}

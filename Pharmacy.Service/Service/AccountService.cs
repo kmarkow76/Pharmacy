@@ -208,5 +208,53 @@ public class AccountService : IAccountServise
             };
         }
     }
+    public async Task<BaseResponse<ClaimsIdentity>> IsCreatedAccount(User model)
+    {
+        try
+        {
+            var userDb = new UserDb();
+
+            // Проверяем, существует ли пользователь с таким email
+            if (await _userStorage.GetAll().FirstOrDefaultAsync(x => x.Email == model.Email) == null)
+            {
+                model.Password = "google";
+                model.CreatedAt = DateTime.Now;
+
+                userDb = _mapper.Map<UserDb>(model);
+                await _userStorage.Add(userDb);
+
+                // Аутентификация нового пользователя
+                var resultRegister = AuthenticateUserHelper.Authenticate(model);
+
+                return new BaseResponse<ClaimsIdentity>()
+                {
+                    Data = resultRegister,
+                    Description = "Объект добавился",
+                    StatusCode = StatusCode.OK
+                };
+            }
+            else
+            {
+                // Если пользователь уже существует, аутентифицируем его
+                var resultLogin = AuthenticateUserHelper.Authenticate(model);
+
+                return new BaseResponse<ClaimsIdentity>()
+                {
+                    Data = resultLogin,
+                    Description = "Объект уже был создан",
+                    StatusCode = StatusCode.OK
+                };
+            }
+        }
+        catch (Exception ex)
+        {
+            // Обработка ошибок
+            return new BaseResponse<ClaimsIdentity>()
+            {
+                Description = ex.Message,
+                StatusCode = StatusCode.InternalServerError
+            };
+        }
+    }
 
 }
