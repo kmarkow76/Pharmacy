@@ -44,12 +44,10 @@
                     </a>
 
                     <!-- Кнопка корзины как иконка -->
-                    <a href="#" id="cart-button" class="btn ms-2">
+                    <a href="" id="cart-button" class="btn ms-2">
                         <img src="~/images/cart.svg" alt="Cart" style="height: 20px;"/>
                     </a>
-                    <a href="#" id="cart-button" class="btn ms-2">
-                        <img src="~/images/user.png" alt="User" style="height: 20px;"/>
-                    </a>
+                  
                     @if (User.Identity.IsAuthenticated)
                     {
                     <button class="btn-new ms-3" type="button" onclick="window.location.href = '@Url.Action("Logout", "Home")'">Выйти</button>

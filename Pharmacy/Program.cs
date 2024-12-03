@@ -8,13 +8,14 @@ using Pharmacy.Domain.ModelsDb;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Добавление сервисов для работы с контроллерами и представлениями
 builder.Services.AddControllersWithViews();
 
+// Получение строки подключения и настройка контекста базы данных
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connection));
 
+// Настройка аутентификации
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -23,38 +24,44 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     })
     .AddGoogle(GoogleDefaults.AuthenticationScheme, options =>
     {
-    options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
-    options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
-    options.Scope.Add("profile");
-    options.ClaimActions.MapJsonKey("picture", "picture");
+        options.ClientId = builder.Configuration.GetSection("GoogleKeys:ClientId").Value;
+        options.ClientSecret = builder.Configuration.GetSection("GoogleKeys:ClientSecret").Value;
+        options.Scope.Add("profile");
+        options.ClaimActions.MapJsonKey("picture", "picture");
     });
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
+// Инициализация репозиториев и сервисов
 builder.Services.InitializeRepositories();
 builder.Services.InitializeServices();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Конфигурация HTTP запроса
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
-
-app.UseAuthorization();
-app.UseAuthentication();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseDeveloperExceptionPage();
 app.UseRouting();
-app.UseAuthorization();
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Настройка аутентификации и авторизации
+app.UseAuthentication();  // Аутентификация должна быть перед авторизацией
+app.UseAuthorization();   // Авторизация после аутентификации
+
+// Маршрутизация
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
+        name: "profile",
+        pattern: "User/Profile",
+        defaults: new { controller = "User", action = "Profile" });
+});
 
 app.Run();
