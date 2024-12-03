@@ -1,0 +1,106 @@
+/* Сетка */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr)); /* Автоматически подгоняет элементы */
+    gap: 15px; /* Расстояние между карточками */
+    padding: 20px;
+}
+
+.container-categories {
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+}
+
+/* Ссылки */
+.link-page {
+    font-weight: 600;
+    line-height: 150%;
+    color: #0c0e10;
+    margin: 10px 20px;
+    border-radius: 5px;
+    padding-left: 40px;
+    background: rgba(255, 165, 0, 0.3);
+}
+
+.link-page a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-page a:hover {
+    color: rgba(255, 165, 0, 1);
+}
+
+/* Карточка */
+.card-category {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Изображение */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Название и текстовый блок */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(0, 0, 0, 0); /* Начальная прозрачность */
+    transition: background 0.5s ease-in-out;
+}
+
+/* Название (всегда видно внизу) */
+.card-title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    background: rgba(250, 165, 0, 0.7); /* Черный полупрозрачный фон */
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Описание (скрыто до наведения) */
+.card-description {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+/* При наведении */
+.card-category:hover .card-image {
+    transform: scale(1.1); /* увеличение картинки */
+}
+
+.card-category:hover .card-overlay {
+    background: rgba(0, 0, 0, 0.6); /* Затемнение всей карточки */
+    justify-content: center; /* Центрируем контент */
+}
+
+.card-category:hover .card-title {
+    transform: translateY(-50%); /* Поднимаем название */
+    background: none; /* Убираем фон у названия */
+}
+
+.card-category:hover .card-description {
+    display: block; /* Показываем описание */
+}

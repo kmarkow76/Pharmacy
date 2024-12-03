@@ -12,8 +12,8 @@ using Pharmacy.DAL;
 namespace Pharmacy.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241122125242_Initial")]
-    partial class Initial
+    [Migration("20241203125521_newww")]
+    partial class newww
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,6 +87,10 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PathImage")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -186,7 +190,8 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp")
+                        .HasColumnName("CreatedAt");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -197,7 +202,6 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PartImage")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -206,10 +210,6 @@ namespace Pharmacy.DAL.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("integer");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

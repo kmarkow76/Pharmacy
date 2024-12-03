@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 using Pharmacy;
 using Pharmacy.DAL;
+using Pharmacy.Domain.ModelsDb;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -12,8 +12,8 @@ using Pharmacy.DAL;
 namespace Pharmacy.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241122125812_Initi")]
-    partial class Initi
+    [Migration("20241203124000_new")]
+    partial class @new
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,6 +87,10 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PathImage")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -198,7 +202,6 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PartImage")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -207,10 +210,6 @@ namespace Pharmacy.DAL.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("integer");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

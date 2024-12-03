@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Pharmacy.bundle.scp.css"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\ImageUser\\kirillmarkor@gmail.com-avatar.jpg",
+      "PackagePath": "staticwebassets\\ImageUser\\kirillmarkor@gmail.com-avatar.jpg"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\apteka.ico",
       "PackagePath": "staticwebassets\\apteka.ico"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\category.css",
+      "PackagePath": "staticwebassets\\css\\category.css"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\css\\contacts.css",
@@ -111,6 +119,18 @@
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\cart.svg",
       "PackagePath": "staticwebassets\\images\\cart.svg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\category1.jpg",
+      "PackagePath": "staticwebassets\\images\\category1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\category2.jpg",
+      "PackagePath": "staticwebassets\\images\\category2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\category3.jpg",
+      "PackagePath": "staticwebassets\\images\\category3.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy\\wwwroot\\images\\director1.jpg",

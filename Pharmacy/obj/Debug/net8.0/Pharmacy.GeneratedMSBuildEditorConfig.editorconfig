@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Categories/ListOfCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xMaXN0T2ZDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

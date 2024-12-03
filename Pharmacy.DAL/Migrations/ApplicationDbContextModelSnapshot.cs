@@ -87,6 +87,10 @@ namespace Pharmacy.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("PathImage")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("CategoryDb");
@@ -195,7 +199,6 @@ namespace Pharmacy.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PartImage")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
@@ -204,10 +207,6 @@ namespace Pharmacy.DAL.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("integer");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

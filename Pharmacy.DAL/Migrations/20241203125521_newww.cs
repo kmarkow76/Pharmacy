@@ -5,7 +5,7 @@
 namespace Pharmacy.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class Initi : Migration
+    public partial class newww : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
