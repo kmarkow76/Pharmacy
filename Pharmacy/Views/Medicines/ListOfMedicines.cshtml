@@ -1,0 +1,54 @@
+@model Pharmacy.Domain.ViewModels.Medecine.ListOfMedicinesViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Список медикаментов";
+}
+<div class="container-list-tours">
+    <!-- Навигация -->
+    <div class="link-page">
+        <a href="/Home/Index">Главная</a> >
+    </div>
+    <!-- Фильтры -->
+    <div class="container-filter-tours">
+        <div class="filter">
+            <!-- Добавьте фильтры здесь -->
+        </div>
+    </div>
+    <!-- Список туров -->
+    <div class="container-tours">
+        <div class="sorts">
+            <!-- Сортировка (если есть) -->
+        </div>
+
+        <div class="list-tours">
+            @foreach (var item in Model.Medicines)
+            {
+                <div class="tour-item">
+
+                    <!-- Изображение -->
+                    <img src="@item.Image" class="item-tour-img" alt="Tour Image"/>
+
+                    <!-- Информация о туре -->
+                    <div class="item-info">
+                        <h2>@item.Name</h2>
+                        <h2>@item.Description</h2>
+                    </div>
+
+                    <!-- Цены -->
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>@item.Price₽</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Скрытые поля -->
+                    <input asp-for="@item.Id" value="@item.Id" type="hidden"/>
+                    <input asp-for="@item.CategoryId" value="@item.CategoryId" type="hidden"/>
+                </div>
+            }
+        </div>
+    </div>
+</div>

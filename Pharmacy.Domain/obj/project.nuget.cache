@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6DXhoUfSePA=",
+  "dgSpecHash": "6Z3zqhSbMTc=",
   "success": true,
-  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj",
+  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Кирилл\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Кирилл\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",

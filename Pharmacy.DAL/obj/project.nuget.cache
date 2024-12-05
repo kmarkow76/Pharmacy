@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kYtPOPcSGb4=",
+  "dgSpecHash": "AusZXgq1zxs=",
   "success": true,
-  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj",
+  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Кирилл\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Кирилл\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pharmacy.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41214ea39b1b49baa403ab422721f065bfaf2c4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a4f80c491bc10e1f10173be04e4f10509ce1c54")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pharmacy.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pharmacy.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

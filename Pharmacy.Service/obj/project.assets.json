@@ -2225,11 +2225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
+      "projectUniqueName": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
       "projectName": "Pharmacy.Service",
-      "projectPath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
+      "projectPath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
       "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
-      "outputPath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Service\\obj\\",
+      "outputPath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Кирилл\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2246,11 +2246,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj": {
-              "projectPath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj"
+            "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj": {
+              "projectPath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.DAL\\Pharmacy.DAL.csproj"
             },
-            "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj": {
-              "projectPath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj"
+            "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj": {
+              "projectPath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Domain\\Pharmacy.Domain.csproj"
             }
           }
         }

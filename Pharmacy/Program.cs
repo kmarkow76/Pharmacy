@@ -5,12 +5,15 @@ using Microsoft.EntityFrameworkCore;
 using Pharmacy;
 using Pharmacy.DAL;
 using Pharmacy.Domain.ModelsDb;
+using Pharmacy.Service.Interfaces;
+using Pharmacy.Service.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Добавление сервисов для работы с контроллерами и представлениями
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IMedicineService, MedicineService>();
 // Получение строки подключения и настройка контекста базы данных
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connection));
@@ -33,7 +36,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 // Инициализация репозиториев и сервисов
 builder.Services.InitializeRepositories();
 builder.Services.InitializeServices();
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 // Конфигурация HTTP запроса
@@ -47,6 +50,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+
 // Настройка аутентификации и авторизации
 app.UseAuthentication();  // Аутентификация должна быть перед авторизацией
 app.UseAuthorization();   // Авторизация после аутентификации
@@ -57,11 +61,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-
-    endpoints.MapControllerRoute(
-        name: "profile",
-        pattern: "User/Profile",
-        defaults: new { controller = "User", action = "Profile" });
+    
 });
 
 app.Run();

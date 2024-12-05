@@ -42,19 +42,14 @@
                     <a href="#" id="search-button" class="btn">
                         <img src="~/images/search.svg" alt="Search" style="height: 20px;"/>
                     </a>
-
-                    <!-- Кнопка корзины как иконка -->
-                    <a href="" id="cart-button" class="btn ms-2">
-                        <img src="~/images/cart.svg" alt="Cart" style="height: 20px;"/>
-                    </a>
-                  
+                    
                     @if (User.Identity.IsAuthenticated)
                     {
-                    <button class="btn-new ms-3" type="button" onclick="window.location.href = '@Url.Action("Logout", "Home")'">Выйти</button>
+                    <button class="btn-new" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal" type="button" onclick="window.location.href = '@Url.Action("Logout", "Home")'">Выйти</button>
                     }
                     else
                     {
-                    <a class="btn-new ms-3" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
+                    <a class="btn-new" id="click-to-hide" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</a>
                     }
                 </div>
             </div>

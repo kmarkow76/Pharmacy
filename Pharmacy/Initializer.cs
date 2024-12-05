@@ -13,12 +13,14 @@ public static class Initializer
     {
         services.AddScoped<IBaseStorage<UserDb>, UserStorage>();
         services.AddScoped<IBaseStorage<CategoryDb>, CategoryStorage>();
+        services.AddScoped<IBaseStorage<MedicineDb>, MedicineStorage>();
     }
 
     public static void InitializeServices(this IServiceCollection services)
     {
         services.AddScoped<IAccountServise, AccountService>();
         services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IMedicineService, MedicineService>();
         services.AddControllersWithViews()
             .AddDataAnnotationsLocalization()
             .AddViewLocalization();

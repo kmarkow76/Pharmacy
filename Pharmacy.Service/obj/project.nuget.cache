@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZQj1XEfMEUk=",
+  "dgSpecHash": "AePDXv+gz3k=",
   "success": true,
-  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
+  "projectFilePath": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy.Service\\Pharmacy.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Кирилл\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Кирилл\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",

@@ -91,6 +91,8 @@ h1 {
   font-size: 18px; /* Увеличим размер шрифта */
   text-decoration: none; /* Убираем подчеркивание */
   display: inline-block; /* Убедимся, что элемент ведет себя как кнопка */
+  border: none; /* Убираем обводку */
+  outline: none; /* Убираем фокусную обводку */
 }
 
 .btn-new:hover {

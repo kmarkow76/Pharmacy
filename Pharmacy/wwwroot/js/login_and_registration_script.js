@@ -76,12 +76,13 @@ async function register() {
             console.log("Регистрация успешна:", result);
 
             // Сохраняем сгенерированный код для использования при подтверждении
-            const confirmationCode = result.confirmationCode;
-            document.getElementById("generated-code").value = confirmationCode; // Сохраняем в скрытом поле
+           /* const confirmationCode = result.confirmationCode;
+            document.getElementById("generated-code").value = confirmationCode; // Сохраняем в скрытом поле*/
 
-            // Очищаем и закрываем форму регистрации
-            cleaningAndClosingForm("#signup-form", errorContainer);
-
+          /*  // Очищаем и закрываем форму регистрации
+            cleaningAndClosingForm("#signup-form", errorContainer);*/
+           const generatedCode = result.generatedCode;
+           document.getElementById("generated-code").value = generatedCode;
             // Показываем поле для ввода кода подтверждения
             document.getElementById("confirmation-code-container").style.display = "block";
             document.getElementById("confirm-email-btn").style.display = "block"; // Показываем кнопку подтверждения
@@ -111,8 +112,12 @@ function displayErrors(errors, errorContainer, formId) {
 function cleaningAndClosingForm(form, errorContainer) {
     errorContainer.innerHTML = '';
     const formElement = document.querySelector(form);
+    if (!formElement) {
+        console.error(`Элемент формы "${form}" не найден.`);
+        return;
+    }
     const inputs = formElement.querySelectorAll('input');
-    inputs.forEach(input => input.value = ''); // Очистка полей формы
+    inputs.forEach(input => (input.value = '')); // Очистка полей формы
 }
 
 // Функция для показа и скрытия пароля
@@ -133,17 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Функция для переключения видимости контейнера
-function hiddenOpen_Closeclick(container, forceDisplay = null) {
-    const element = document.querySelector(container);
-    if (element) {
-        if (forceDisplay !== null) {
-            element.style.display = forceDisplay;
-        } else {
-            element.style.display = element.style.display === "none" || element.style.display === "" ? "block" : "none";
-        }
-    }
-}
 
 // Функция для подтверждения почты
 function confirmEmail() {
@@ -183,12 +177,9 @@ function confirmEmail() {
     sendRequest('POST', '/Home/ConfirmEmail', body)
         .then(data => {
             console.log("Код подтверждения:", data);
-            if (data.success) {
-                hiddenOpen_Closeclick(".confirm-email-container");
+                cleaningAndClosingForm("#form_signup",errorContainer);
                 location.reload(); // Обновляем страницу
-            } else {
                 displayErrors(data.errors, errorContainer);
-            }
         })
         .catch(err => {
             displayErrors(err, errorContainer);

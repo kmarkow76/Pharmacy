@@ -9,51 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Pharmacy
 build_property.RootNamespace = Pharmacy
-build_property.ProjectDir = D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy\
+build_property.ProjectDir = D:\Практика(Зимняя)\Проекты\AAaaa\Pharmacy\Pharmacy\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Практика(Зимняя)\Проекты\Pharmacy\Pharmacy
+build_property.MSBuildProjectDirectory = D:\Практика(Зимняя)\Проекты\AAaaa\Pharmacy\Pharmacy
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Categories/ListOfCategories.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Categories/ListOfCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xMaXN0T2ZDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Home/About.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Home/Contacts.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Home/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Home/Index.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Shared/_ConfirmEmailPartial.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Medicines/ListOfMedicines.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNpbmVzXExpc3RPZk1lZGljaW5lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Shared/_ConfirmEmailPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25maXJtRW1haWxQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Shared/_LoginRegistrationPartial.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Shared/_LoginRegistrationPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblJlZ2lzdHJhdGlvblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/_ViewImports.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/_ViewStart.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Практика(Зимняя)/Проекты/Pharmacy/Pharmacy/Views/Shared/_Layout.cshtml]
+[D:/Практика(Зимняя)/Проекты/AAaaa/Pharmacy/Pharmacy/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-873r5iwzbd
