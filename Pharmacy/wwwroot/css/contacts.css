@@ -5,7 +5,15 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.container {
+  max-width: 1200px; /* Ширина контейнера */
+  margin: 0 auto; /* Центрирование */
+  padding: 20px; /* Внутренние отступы */
+  background-color: #f9f9f9; /* Светлый фон */
+  border-radius: 12px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  margin-top: 50px;
+}
 .page-title {
   text-align: center;
   font-size: 2rem;
@@ -46,9 +54,9 @@ body {
 }
 
 .person-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
   border: 2px solid #ddd;
   object-fit: cover;
   margin-bottom: 10px;

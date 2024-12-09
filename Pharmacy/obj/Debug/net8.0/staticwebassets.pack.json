@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\contacts.css"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\filter.css",
+      "PackagePath": "staticwebassets\\css\\filter.css"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -55,6 +59,10 @@
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\icon.ico",
       "PackagePath": "staticwebassets\\icon.ico"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\icons.ico",
+      "PackagePath": "staticwebassets\\icons.ico"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\icons\\Calling.svg",
@@ -93,28 +101,8 @@
       "PackagePath": "staticwebassets\\icons\\google.svg"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\1.png",
-      "PackagePath": "staticwebassets\\images\\1.png"
-    },
-    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\108.jpg",
       "PackagePath": "staticwebassets\\images\\108.jpg"
-    },
-    {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\2.png",
-      "PackagePath": "staticwebassets\\images\\2.png"
-    },
-    {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\3.png",
-      "PackagePath": "staticwebassets\\images\\3.png"
-    },
-    {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\4.png",
-      "PackagePath": "staticwebassets\\images\\4.png"
-    },
-    {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\5.png",
-      "PackagePath": "staticwebassets\\images\\5.png"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\bunch-medical-pills-tablets.png",
@@ -125,28 +113,136 @@
       "PackagePath": "staticwebassets\\images\\cart.svg"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category1.jpg",
-      "PackagePath": "staticwebassets\\images\\category1.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category11.jpg",
+      "PackagePath": "staticwebassets\\images\\category11.jpg"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category2.jpg",
-      "PackagePath": "staticwebassets\\images\\category2.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category22.jpg",
+      "PackagePath": "staticwebassets\\images\\category22.jpg"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category3.jpg",
-      "PackagePath": "staticwebassets\\images\\category3.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\category33.jpg",
+      "PackagePath": "staticwebassets\\images\\category33.jpg"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\director1.jpg",
-      "PackagePath": "staticwebassets\\images\\director1.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\diagn\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\directorcomp.jpg",
+      "PackagePath": "staticwebassets\\images\\directorcomp.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\email.png",
       "PackagePath": "staticwebassets\\images\\email.png"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\fon.jpg",
-      "PackagePath": "staticwebassets\\images\\fon.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gastr\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\gastr\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\gigiena\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\gigiena\\8.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\location.png",
@@ -157,28 +253,340 @@
       "PackagePath": "staticwebassets\\images\\logo1.png"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\pharmacist1.jpg",
-      "PackagePath": "staticwebassets\\images\\pharmacist1.jpg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\logotip.png",
+      "PackagePath": "staticwebassets\\images\\logotip.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama.jpg",
+      "PackagePath": "staticwebassets\\images\\mama.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\mama\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\mama\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev.jpg",
+      "PackagePath": "staticwebassets\\images\\perev.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\perev\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\perev\\8.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\phone.png",
       "PackagePath": "staticwebassets\\images\\phone.png"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\3..jpg",
+      "PackagePath": "staticwebassets\\images\\por\\3..jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\por\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\por\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\4.озп.png",
+      "PackagePath": "staticwebassets\\images\\prostuda\\4.озп.png"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\prostuda\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\prostuda\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\proviser.jpg",
+      "PackagePath": "staticwebassets\\images\\proviser.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab.jpg",
+      "PackagePath": "staticwebassets\\images\\reab.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\reab\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\reab\\8.jpg"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\search.svg",
       "PackagePath": "staticwebassets\\images\\search.svg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\sirop\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\sirop\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\travnast\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\travnast\\8.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\user.png",
       "PackagePath": "staticwebassets\\images\\user.png"
     },
     {
-      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\Что-такое-фото.jpeg",
-      "PackagePath": "staticwebassets\\images\\Что-такое-фото.jpeg"
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\you\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\you\\8.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\yourself.jpg",
+      "PackagePath": "staticwebassets\\images\\yourself.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\1.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\2.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\3.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\4.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\5.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\6.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\7.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\zyb\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\zyb\\8.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\js\\chared_script.js",
       "PackagePath": "staticwebassets\\js\\chared_script.js"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\js\\filter.js",
+      "PackagePath": "staticwebassets\\js\\filter.js"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\js\\home.js",

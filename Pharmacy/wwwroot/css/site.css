@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center; /* Выровнять элементы по центру */
   align-items: center; /* Выровнять элементы по вертикали */
-  padding-left: 0; /* Убираем отступ слева */
+  padding-right: 90px; /* Убираем отступ слева */
   margin-bottom: 0; /* Убираем отступ снизу */
 }
 

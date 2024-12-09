@@ -1,35 +1,39 @@
 ﻿@{
-ViewData["Title"] = "Контакты";
+    ViewData["Title"] = "Контакты";
 }
 
-<h1 class="page-title">Контакты</h1>
+<div class="container">
+    <h1 class="page-title">Контакты</h1>
 
-<div class="contact-info">
-    <div class="contact-item">
-        <img src="~/icons/Calling.svg" alt="Телефон" class="contact-icon"/>
-        <p><strong>Телефон:</strong> +373 (777) 69 188</p>
+    <div class="contact-info">
+        <div class="contact-item">
+            <img src="~/icons/Calling.svg" alt="Телефон" class="contact-icon"/>
+            <p><strong>Телефон:</strong> +373 (777) 69 188</p>
+        </div>
+        <div class="contact-item">
+            <img src="~/icons/Message.svg" alt="Email" class="contact-icon"/>
+            <p><strong>Email:</strong> pill4paradise@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <img src="~/icons/Location.svg" alt="Адрес" class="contact-icon"/>
+            <p><strong>Адрес:</strong> пр. Магистральный, 12, Приднестровье, Тирасполь</p>
+        </div>
     </div>
-    <div class="contact-item">
-        <img src="~/icons/Message.svg" alt="Email" class="contact-icon"/>
-        <p><strong>Email:</strong> elexhouse@gmail.com</p>
+
+    <div class="photo-section">
+        <div class="photo-block">
+            <img src="~/images/directorcomp.jpg" alt="Директор компании" class="person-photo"/>
+            <p>Директор компании</p>
+        </div>
+        <div class="photo-block">
+            <img src="~/images/proviser.jpg" alt="Фармацевт-провизор" class="person-photo"/>
+            <p>Фармацевт-провизор</p>
+        </div>
     </div>
-    <div class="contact-item">
-        <img src="~/icons/Location.svg" alt="Адрес" class="contact-icon"/>
-        <p><strong>Адрес:</strong> пр. Магистральный, 12, Приднестровье, Тирасполь</p>
-    </div>
+
+    <div id="yandex-map"></div>
 </div>
 
-<div class="photo-section">
-    <div class="photo-block">
-        <img src="~/images/director1.jpg" alt="Директор компании" class="person-photo"/>
-        <p>Директор компании</p>
-    </div>
-    <div class="photo-block">
-        <img src="~/images/pharmacist1.jpg" alt="Фармацевт-провизор" class="person-photo"/>
-        <p>Фармацевт-провизор</p>
-    </div>
-</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afa64b90c39ede3a8cee23ce0fe2ea7c7daaf8dcef46e7be586963cb615867708&amp;width=1157&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 
-<div id="yandex-map" style="width: 100%; height: 40px; margin-bottom: 20px;"></div>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64c044e180bededa52354c0a0c76429e91f2899586f07a98586bf987c10246d6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 <link rel="stylesheet" href="~/css/contacts.css" asp-append-version="true"/>

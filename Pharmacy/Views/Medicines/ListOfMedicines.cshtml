@@ -1,54 +1,82 @@
+@using Org.BouncyCastle.Crypto.Engines
 @model Pharmacy.Domain.ViewModels.Medecine.ListOfMedicinesViewModel
 
 @{
-    Layout = "_Layout";
-    ViewData["Title"] = "Список медикаментов";
+Layout = "_Layout";
+ViewData["Title"] = "Список медикаментов";
 }
-<div class="container-list-tours">
-    <!-- Навигация -->
-    <div class="link-page">
-        <a href="/Home/Index">Главная</a> >
-    </div>
-    <!-- Фильтры -->
-    <div class="container-filter-tours">
-        <div class="filter">
-            <!-- Добавьте фильтры здесь -->
+<link rel="stylesheet" href="~/css/filter.css" asp-append-version="true"/>
+<div class="catalog-section">
+    <!-- Список медикаментов -->
+    <div class="catalog-grid">
+        <div class="sort-container">
+            <!-- Сортировка -->
+            <label for="sort-options" class="sort-label">Сортировать по:</label>
+            <select id="sort-options" class="sort-select">
+                <option value="">Выберите...</option>
+                <option value="price-adult-asc">Цена (по возрастанию)</option>
+                <option value="price-adult-desc">Цена (по убыванию)</option>
+            </select>
         </div>
     </div>
-    <!-- Список туров -->
-    <div class="container-tours">
-        <div class="sorts">
-            <!-- Сортировка (если есть) -->
-        </div>
-
-        <div class="list-tours">
-            @foreach (var item in Model.Medicines)
-            {
-                <div class="tour-item">
-
-                    <!-- Изображение -->
-                    <img src="@item.Image" class="item-tour-img" alt="Tour Image"/>
-
-                    <!-- Информация о туре -->
-                    <div class="item-info">
-                        <h2>@item.Name</h2>
-                        <h2>@item.Description</h2>
-                    </div>
-
-                    <!-- Цены -->
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>@item.Price₽</td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <!-- Скрытые поля -->
-                    <input asp-for="@item.Id" value="@item.Id" type="hidden"/>
-                    <input asp-for="@item.CategoryId" value="@item.CategoryId" type="hidden"/>
+    <div class="content-container">
+        <!-- Секция категорий -->
+        <aside class="categories-section">
+            <h3 class="filter-title">Фильтр</h3>
+            <!-- Фильтр для цен -->
+            <div class="filter-price">
+                <label class="filter-label">Цена:</label>
+                <div>
+                    <label for="adult-min-price">Минимальная цена:</label>
+                    <input type="range" id="adult-min-price" min="0" max="2000" value="0">
+                    <span id="adult-min-label">0</span>
                 </div>
-            }
-        </div>
+                <div>
+                    <label for="adult-max-price">Максимальная цена:</label>
+                    <input type="range" id="adult-max-price" min="0" max="2000" value="2000">
+                    <span id="adult-max-label">2000</span>
+                </div>
+                <div>Текущие значения: <span id="adult-price-values">0 - 2000</span></div>
+            </div>
+            <input id="CategoryId" value="@Model.CategoryId" style="display: none"/>
+            <div class="filter-button">
+                <button id="apply-filter" class="filter-apply">Применить фильтр</button>
+            </div>
+        </aside>
+
+        <!-- Секция каталога -->
+        <main id="catalog" class="catalog-section">
+            <div class="catalog-grid">
+                @foreach (var item in Model.Medicines)
+                {
+                    <div class="product-card">
+                        <!-- Изображение -->
+                        <div class="product-img-container">
+                            <img src="@item.Image" class="product-img" alt="Medicine Image"/>
+                        </div>
+
+                        <!-- Информация о медикаменте -->
+                        <h2 class="product-title">@item.Name</h2>
+
+                        <!-- Цена -->
+                        <div class="product-price">
+                            @item.Price₽
+                        </div>
+
+                        <!-- Кнопка подробнее -->
+                        <div class="product-details">
+                            <button class="details-button"
+                                    onclick="window.location.href='@Url.Action("MedicinePage", "Medicines", new { Id = item.Id })'">
+                                Подробнее
+                            </button>
+                        </div>
+
+                        <!-- Скрытые поля -->
+                        <input asp-for="@item.Id" value="@item.Id" type="hidden"/>
+                        <input asp-for="@item.CategoryId" value="@item.CategoryId" type="hidden"/>
+                    </div>
+                }
+            </div>
+        </main>
     </div>
 </div>

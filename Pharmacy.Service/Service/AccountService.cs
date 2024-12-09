@@ -134,45 +134,114 @@ public class AccountService : IAccountServise
         }
     }
 
-    public async Task SendEmail(string email, string confirmationCode)
+ public async Task SendEmail(string email, string confirmationCode)
+{
+    string path = @"D:\Практика(Зимняя)\Проекты\Pharmacy\password.txt";
+    var emailMessage = new MimeMessage();
+
+    emailMessage.From.Add(new MailboxAddress("Администрация PillParadice", "Vdox.ru"));
+    emailMessage.To.Add(new MailboxAddress("", email));
+    emailMessage.Subject = "Подтверждение регистрации";
+
+    // Тело письма с использованием HTML-шаблона
+    emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
     {
-        string path = @"D:\Практика(Зимняя)\Проекты\Pharmacy\password.txt";
-        var emailMessage = new MimeMessage();
-        
-        emailMessage.From.Add(new MailboxAddress("Администрация сайта","Vdox.ru"));
-        emailMessage.To.Add(new MailboxAddress("",email));
-        emailMessage.Subject = "Добро пожаловать"!;
-        emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
+        Text = @"
+            <!DOCTYPE html>
+            <html lang='ru'>
+            <head>
+                <meta charset='UTF-8'>
+                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                <title>Подтверждение Email</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f9f9f9;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .container {
+                        max-width: 600px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    }
+                    .header {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .header h1 {
+                        color: #FF77B1;
+                        font-size: 24px;
+                        margin: 0;
+                    }
+                    .message {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        color: #333;
+                    }
+                    .code-container {
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+                    .code {
+                        display: inline-block;
+                        background-color: #f2f2f2;
+                        padding: 10px 20px;
+                        border-radius: 8px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        color: #FF77B1;
+                    }
+                    .footer {
+                        text-align: center;
+                        margin-top: 20px;
+                        font-size: 14px;
+                        color: #777;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class='container'>
+                    <div class='header'>
+                        <h1>Добро пожаловать в PillParadice!</h1>
+                    </div>
+                    <div class='message'>
+                        <p>Спасибо за регистрацию на нашем сайте! Мы рады, что вы выбрали PillParadice.</p>
+                        <p>Для завершения регистрации, пожалуйста, используйте код подтверждения ниже:</p>
+                    </div>
+                    <div class='code-container'>
+                        <div class='code'>" + confirmationCode + @"</div>
+                    </div>
+                    <div class='message'>
+                        <p>Если вы не регистрировались на нашем сайте, просто проигнорируйте это письмо.</p>
+                    </div>
+                    <div class='footer'>
+                        <p>С наилучшими пожеланиями, команда PillParadice</p>
+                        <p>&copy; 2024 PillParadice. Все права защищены.</p>
+                    </div>
+                </div>
+            </body>
+            </html>"
+    };
+
+    using (StreamReader reader = new StreamReader(path))
+    {
+        string password = await reader.ReadToEndAsync(); // Прочтение пароля из файла
+        using (var client = new SmtpClient())
         {
-            Text="<html>"+"<head>"+"<style>"+
-                 "body{font-family:Arial,sans-serif;background-color:#f2f2f2;}"+
-                 ".container{max-width:600px;margin:0 auto;padding:20px;background-color:#fff;border-radius:10px; box-shadow:0px 0px 10px rgba(0,0,0,0.1);}"+
-                 ".header{text-align:center;margin-bottom:20px;}"+
-                 ".message{font-size:16px;line-height:1.6;}"+
-                 ".conteiner-code{background-color:#f0f0f0;padding:5px;border-radius:5px;font-weight:bold;}"+
-                 ".code {text-align:center;}"+
-                 "</style>"+
-                 "</head>"+
-                 "<body>"+
-                 "<div class='container'>"+
-                 "<div class='header'><h1>Добро пожаловать на сайт ювелирного магазина Вдохновение</h1></div>"+
-                 "<div class='message'>"+
-                 "<p>Пожалуйста, введите данный код на сайте, чтобы подтвердить ваш email и завершить регистрацию:</p>"+
-                 "<div class='conteiner-code'><p class='code'>"+confirmationCode+"</p></div>"+
-                 "</div>"+"</div>"+"</body>"+"</html>"
-        };
-        using (StreamReader reader = new StreamReader(path))
-        {
-            string password = await reader.ReadToEndAsync();
-            using (var client=new SmtpClient())
-            {
-                await client.ConnectAsync("smtp.gmail.com",465,true);
-                await client.AuthenticateAsync("kirillmarkor@gmail.com",password);
-                await client.SendAsync(emailMessage);
-                await client.DisconnectAsync(true);
-            }
+            // Подключение к SMTP-серверу
+            await client.ConnectAsync("smtp.gmail.com", 465, true);
+            await client.AuthenticateAsync("kirillmarkor@gmail.com", password);
+            await client.SendAsync(emailMessage);
+            await client.DisconnectAsync(true);
         }
     }
+}
+
 
     public async Task<BaseResponse<ClaimsIdentity>> ConfirmEmail(User model, string code, string confirmationCode)
     {

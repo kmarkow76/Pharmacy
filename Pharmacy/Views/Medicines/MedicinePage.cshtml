@@ -1,0 +1,25 @@
+@model Pharmacy.Domain.ViewModels.MedicinePageViewModel
+@{
+    ViewData["Title"] = @Model.Name;
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/filter.css" asp-append-version="true"/>
+<div class="product">
+    <div class="product-details">
+        <div class="product-images">
+            <img id="main-image" src="@Model.Image" alt="@Model.Name" class="main-image">
+        </div>
+        <div class="product-info">
+            <h1>@Model.Name</h1>
+            <p class="product-price">@Model.Price ₽</p>
+            <div class="product-actions">
+                <button class="btn btn-buy">Купить</button>
+                <button class="btn btn-add-to-cart">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-description">
+        <p><strong>Описание:</strong> @Model.Description</p>
+    </div>
+</div>з

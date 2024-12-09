@@ -2,6 +2,7 @@ using Pharmacy.Domain.ModelsDb;
 using Pharmacy.Domain.Models;
 
 using AutoMapper;
+using Pharmacy.Domain.ViewModels;
 using Pharmacy.Domain.ViewModels.Category;
 using Pharmacy.Domain.ViewModels.LoginAndRegistration;
 using Pharmacy.Domain.ViewModels.Medecine;
@@ -17,11 +18,12 @@ public class AppMappingProfile : Profile
         CreateMap<User, RegisterViewModel>().ReverseMap();
         CreateMap<RegisterViewModel,ConfirmEmailViewModel>().ReverseMap();
         CreateMap<User,ConfirmEmailViewModel>().ReverseMap();
-        CreateMap<CategoryDb, CategoryViewModel>()
-            .ForMember(dest => dest.PathImg, opt => opt.MapFrom(src => src.PathImage)) // Если названия отличаются
-            .ForMember(dest => dest.CountMed, opt => opt.MapFrom(src => src.Medicines.Count));
+        CreateMap<Category, CategoryDb>().ReverseMap();
+        CreateMap<Category, CategoryViewModel>().ReverseMap();
         CreateMap<Medicine, MedicineDb>().ReverseMap();
         CreateMap<Medicine, MedicinesForListOfMedicinesViewModel>().ReverseMap();
+        CreateMap<Medicine, MedicinePageViewModel>().ReverseMap();
+        
     }
     
 }

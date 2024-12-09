@@ -36,96 +36,27 @@
         display: block; /* Меню будет показываться при открытии */
     }
 }
-/* Для экранов шириной до 1200px (планшеты) */
-@media (max-width: 1200px) {
-    .main-banner {
-        height: auto;
-        margin: 15px 0;
+@media (max-width: 900px) {
+    /* Скрываем стандартное меню */
+    .navbar-collapse {
+        display: none; /* По умолчанию скрыто */
     }
 
-    .image-block {
-        width: 400px; /* Уменьшаем ширину изображения */
-        left: 50%; /* Центрируем относительно экрана */
-        transform: translateX(-50%);
-    }
-
-    .welcome-text, .shop-description {
-        left: 50px; /* Сдвигаем текст ближе к краю */
-    }
-
-    .shop-now {
-        left: 50px; /* Сдвигаем кнопку ближе к тексту */
-    }
-}
-
-/* Для экранов шириной до 768px (мобильные устройства) */
-@media (max-width: 768px) {
-    .main-banner {
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .image-block {
-        width: 100%; /* Растягиваем изображение на всю ширину */
-        height: auto;
+    /* Раскрываем меню при наличии класса 'show' */
+    .navbar-collapse.show {
+        display: block;
+        position: absolute;
+        top: 70px; /* Под кнопкой навигации */
         left: 0;
-        transform: none;
+        width: 100%;
+        background-color: #fff; /* Белый фон */
+        z-index: 1000;
     }
 
-    .image-block img {
-        object-fit: cover; /* Убедимся, что изображение заполнит контейнер */
-    }
-
-    .welcome-text {
-        font-size: 24px; /* Уменьшаем шрифт */
-        left: 20px; /* Ближе к краю */
-        top: 100px;
-    }
-
-    .shop-description {
-        font-size: 18px;
-        left: 20px;
-        width: 90%;
-        top: 140px;
-    }
-
-    .shop-now {
-        left: 20px;
-        width: 120px; /* Уменьшаем ширину кнопки */
-        top: 200px;
-    }
-
-    .category-container {
-        display: none; /* Убираем категории для мобильных */
-    }
-
-    .catalog-section {
-        width: 100%; /* Растягиваем каталог */
-    }
-
-    .catalog-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Меньше колонок */
+    /* Стили для элементов внутри раскрытого меню */
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-/* Для экранов шириной до 480px (маленькие мобильные устройства) */
-@media (max-width: 480px) {
-    .welcome-text {
-        font-size: 18px;
-        top: 80px;
-    }
-
-    .shop-description {
-        font-size: 14px;
-        top: 110px;
-    }
-
-    .shop-now {
-        top: 160px;
-        width: 100px;
-    }
-
-    .catalog-grid {
-        grid-template-columns: 1fr; /* Одноколоночный вид */
-    }
-}

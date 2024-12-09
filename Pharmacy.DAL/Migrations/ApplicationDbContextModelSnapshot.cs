@@ -108,8 +108,8 @@ namespace Pharmacy.DAL.Migrations
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("uuid");
 
-                    b.Property<TimeSpan>("CreatedAt")
-                        .HasColumnType("interval");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
                         .IsRequired()

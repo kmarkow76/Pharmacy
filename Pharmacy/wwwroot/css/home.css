@@ -11,7 +11,7 @@
     position: absolute;
     width: 100%;
     height: 450px;
-    top: -25px;
+    top: 60px;
     background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
 
@@ -221,4 +221,141 @@
 .pagination-link:hover {
     background: #D46F94;
     color: #fff;
+}
+/* Медиа-стили для экранов меньше 1200px (ноутбуки и планшеты в горизонтальной ориентации) */
+@media (max-width: 1200px) {
+    .main-banner {
+        height: 400px;
+        margin: 20px 0;
+    }
+
+    .image-block {
+        width: 400px;
+        height: 400px;
+        left: 60%;
+    }
+
+    .welcome-text {
+        font-size: 28px;
+        top: 120px;
+    }
+
+    .shop-description {
+        font-size: 18px;
+        width: 400px;
+        top: 160px;
+    }
+
+    .categories-section {
+        max-width: 250px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+/* Медиа-стили для экранов меньше 768px (планшеты и телефоны в горизонтальной ориентации) */
+@media (max-width: 768px) {
+    .main-banner {
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .image-block {
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+
+    .welcome-text {
+        font-size: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+        text-align: center;
+    }
+
+    .shop-description {
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        top: 140px;
+    }
+
+    .shop-now {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+    }
+
+    .categories-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .catalog-section {
+        padding: 10px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Медиа-стили для экранов меньше 480px (мобильные устройства) */
+@media (max-width: 480px) {
+    .main-banner {
+        margin: 10px 0;
+    }
+
+    .image-block {
+        width: 100%;
+        height: auto;
+        left: 0;
+        transform: none;
+        top: 0;
+    }
+
+    .welcome-text {
+        font-size: 20px;
+        top: 80px;
+    }
+
+    .shop-description {
+        font-size: 14px;
+        top: 120px;
+    }
+
+    .shop-now {
+        top: 200px;
+        width: 180px;
+    }
+
+    .categories-section {
+        display: none; /* Прячем боковую панель для мобильных */
+    }
+
+    .catalog-section {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .pagination {
+        font-size: 12px;
+    }
+
+    .pagination-link {
+        padding: 3px 8px;
+    }
 }
