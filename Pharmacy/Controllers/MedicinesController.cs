@@ -38,6 +38,8 @@ public class MedicinesController : Controller
         var filteredTours = _mapper.Map<List<MedicinesForListOfMedicinesViewModel>>(result.Data);
         return Json(filteredTours);
     }
+    
+
     public async Task<IActionResult> MedicinePage(Guid Id)
     {
         var resultMedicine = await _medicineService.GetMedicinesById(Id);

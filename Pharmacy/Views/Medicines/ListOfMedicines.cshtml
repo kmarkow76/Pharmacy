@@ -7,36 +7,33 @@ ViewData["Title"] = "Список медикаментов";
 }
 <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true"/>
 <div class="catalog-section">
-    <!-- Список медикаментов -->
-    <div class="catalog-grid">
-        <div class="sort-container">
-            <!-- Сортировка -->
-            <label for="sort-options" class="sort-label">Сортировать по:</label>
-            <select id="sort-options" class="sort-select">
-                <option value="">Выберите...</option>
-                <option value="price-adult-asc">Цена (по возрастанию)</option>
-                <option value="price-adult-desc">Цена (по убыванию)</option>
-            </select>
-        </div>
-    </div>
     <div class="content-container">
         <!-- Секция категорий -->
         <aside class="categories-section">
+            <div class="sort-container">
+                <!-- Сортировка -->
+                <label for="sort-options" class="sort-label">Сортировать по:</label>
+                <select id="sort-options" class="sort-select">
+                    <option value="">Выберите...</option>
+                    <option value="price-adult-asc">Цена (по возрастанию)</option>
+                    <option value="price-adult-desc">Цена (по убыванию)</option>
+                </select>
+            </div>
             <h3 class="filter-title">Фильтр</h3>
             <!-- Фильтр для цен -->
             <div class="filter-price">
                 <label class="filter-label">Цена:</label>
                 <div>
                     <label for="adult-min-price">Минимальная цена:</label>
-                    <input type="range" id="adult-min-price" min="0" max="2000" value="0">
+                    <input type="range" id="adult-min-price" min="0" max="1000" value="0">
                     <span id="adult-min-label">0</span>
                 </div>
                 <div>
                     <label for="adult-max-price">Максимальная цена:</label>
-                    <input type="range" id="adult-max-price" min="0" max="2000" value="2000">
-                    <span id="adult-max-label">2000</span>
+                    <input type="range" id="adult-max-price" min="0" max="599" value="599">
+                    <span id="adult-max-label">599</span>
                 </div>
-                <div>Текущие значения: <span id="adult-price-values">0 - 2000</span></div>
+                <div>Текущие значения: <span id="adult-price-values">0 - 599</span></div>
             </div>
             <input id="CategoryId" value="@Model.CategoryId" style="display: none"/>
             <div class="filter-button">
@@ -45,7 +42,7 @@ ViewData["Title"] = "Список медикаментов";
         </aside>
 
         <!-- Секция каталога -->
-        <main id="catalog" class="catalog-section">
+        <main id="catalog" class="catalog-section catalog-product">
             <div class="catalog-grid">
                 @foreach (var item in Model.Medicines)
                 {
@@ -55,21 +52,21 @@ ViewData["Title"] = "Список медикаментов";
                             <img src="@item.Image" class="product-img" alt="Medicine Image"/>
                         </div>
 
-                        <!-- Информация о медикаменте -->
-                        <h2 class="product-title">@item.Name</h2>
+                <!-- Информация о медикаменте -->
+                <h2 class="product-title">@item.Name</h2>
 
-                        <!-- Цена -->
-                        <div class="product-price">
-                            @item.Price₽
-                        </div>
+                <!-- Цена -->
+                <div class="product-price">
+                    @item.Price₽
+                </div>
 
-                        <!-- Кнопка подробнее -->
-                        <div class="product-details">
-                            <button class="details-button"
-                                    onclick="window.location.href='@Url.Action("MedicinePage", "Medicines", new { Id = item.Id })'">
-                                Подробнее
-                            </button>
-                        </div>
+                <!-- Кнопка подробнее -->
+                <div class="product-details">
+                    <button class="details-button"
+                            onclick="window.location.href='@Url.Action("MedicinePage", "Medicines", new { Id = item.Id })'">
+                        Подробнее
+                    </button>
+                </div>
 
                         <!-- Скрытые поля -->
                         <input asp-for="@item.Id" value="@item.Id" type="hidden"/>
