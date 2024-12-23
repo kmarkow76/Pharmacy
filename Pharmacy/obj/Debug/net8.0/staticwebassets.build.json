@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6sB/6cSmRga8SLu/vY9e1Dz+xl/qfFkXT/xjIg6zrvk=",
+  "Hash": "KAp62EaqWz95XgRFxBwROT0p3HUA6CQnADCRM2n9PtE=",
   "Source": "Pharmacy",
   "BasePath": "_content/Pharmacy",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\media_style.css"
+    },
+    {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\profile.css",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "css/profile.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\services.css",
@@ -606,6 +625,25 @@
       "OriginalItemSpec": "wwwroot\\images\\category33.jpg"
     },
     {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\default-profile.jpg",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "images/default-profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default-profile.jpg"
+    },
+    {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\default.jpg",
       "SourceId": "Pharmacy",
       "SourceType": "Discovered",
@@ -623,6 +661,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default.jpg"
+    },
+    {
+      "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\designer.jpg",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "images/designer.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\designer.jpg"
     },
     {
       "Identity": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn.jpg",

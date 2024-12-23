@@ -48,6 +48,7 @@ document.getElementById('apply-filter').addEventListener('click', () => {
     const minPrice = document.getElementById('adult-min-price').value;
     const maxPrice = document.getElementById('adult-max-price').value;
     const sortOrder = document.getElementById('sort-options').value;
+    const search = document.getElementById('search-input').value;
     // Сбор данных из чекбоксов
     const mealTypes = Array.from(document.querySelectorAll('.meal-types input[type="checkbox"]:checked'))
         .map((checkbox) => checkbox.value);
@@ -57,6 +58,7 @@ document.getElementById('apply-filter').addEventListener('click', () => {
         CategoryId: categoryId,
         priceMin: minPrice,
         priceMax: maxPrice,
+        Search: search,
     };
 
     console.log('Отправляемые данные:', filterData);
@@ -85,48 +87,33 @@ document.getElementById('apply-filter').addEventListener('click', () => {
 });
 
 function dataDisplay(data) {
-    // Найти контейнер для списка туров
-    const toursList = document.querySelector('.catalog-grid');
-    toursList.innerHTML = ''; // Очистить старые данные
-    const catalogcon = document.querySelector('.catalog-product');
+    // Найти контейнер для списка товаров
+    const productsList = document.querySelector('.catalog-grid');
+    productsList.innerHTML = ''; // Очистить старые данные
+
     if (!data || data.length === 0) {
         // Если нет данных, отображаем сообщение
-        const noToursMessage = '<h2>По данному фильтру нет туров</h2>';
-        catalogcon.innerHTML = noToursMessage;
+        const noProductsMessage = '<h2>По данному фильтру нет товаров</h2>';
+        productsList.innerHTML = noProductsMessage;
     } else {
-        // Если данные есть, создаем элементы для туров
-        data.forEach((medicines) => {
-            const tourItem = `
-        <div class="product-card">
-        <!-- Изображение -->
-        <div class="product-img-container">
-            <img src="${medicines.image}" class="product-img" alt="Medicine Image"/>
-        </div>
-
-        <!-- Информация о медикаменте -->
-        <h2 class="product-title">${medicines.name}</h2>
-
-        <!-- Цена -->
-        <div class="product-price">
-            ${medicines.price} ₽
-        </div>
-
-        <!-- Кнопка подробнее -->
-        <div class="product-details">
-                    <button class="details-button" onclick="window.location.href='/medicines/medicinepage/${medicines.id}'">
-                        Подробнее
-                    </button>
-        </div>
-
-        <!-- Скрытые поля -->
-        <input type="hidden" value="${medicines.id}" />
-        <input type="hidden" value="${medicines.catalogId}" />
-    </div>
-        `;
-            // Добавить тур в список
-            toursList.innerHTML += tourItem;
+        // Если данные есть, создаем элементы для товаров
+        data.forEach((medicine) => {
+            const productItem = `
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <img src="${medicine.image}" class="product-img" alt="Medicine Image"/>
+                    </div>
+                    <h2 class="product-title">${medicine.name}</h2>
+                    <div class="product-price">${medicine.price} ₽</div>
+                    <div class="product-details">
+                        <button class="details-button" onclick="window.location.href='/medicines/medicinepage/${medicine.id}'">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            `;
+            productsList.innerHTML += productItem;
         });
-        catalogcon.innerHTML = '';
-        catalogcon.appendChild(toursList);
     }
 }
+

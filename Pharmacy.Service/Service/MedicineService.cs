@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Pharmacy.DAL.Interfaces;
 using Pharmacy.Domain.Enum;
 using Pharmacy.Domain.Models;
@@ -64,6 +65,14 @@ public class MedicineService : IMedicineService
 
             if (filter != null && medicines != null)
             {
+                // Фильтрация по названию товара, если задано значение в поле Search
+                if (!string.IsNullOrEmpty(filter.Search))
+                {
+                    medicines = medicines
+                        .Where(m => m.Name.Contains(filter.Search, StringComparison.OrdinalIgnoreCase)) // Сравнение без учета регистра
+                        .ToList();
+                }
+
                 // Фильтр по минимальной и максимальной цене
                 if (filter.PriceMin > 0 || filter.PriceMax > 0)
                 {
@@ -71,7 +80,7 @@ public class MedicineService : IMedicineService
                         .Where(m => m.Price >= filter.PriceMin && m.Price <= filter.PriceMax)
                         .ToList();
                 }
-                
+
                 // Возвращаем отфильтрованные данные
                 return new BaseResponse<List<Medicine>>
                 {
@@ -101,6 +110,7 @@ public class MedicineService : IMedicineService
             };
         }
     }
+
 
     public async Task<BaseResponse<Medicine>> GetMedicinesById(Guid id)
     {
@@ -133,5 +143,5 @@ public class MedicineService : IMedicineService
             };
         }
     }
-
+  
 }

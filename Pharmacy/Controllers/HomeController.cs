@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using MimeKit;
 using Pharmacy.Domain.Enum;
+using Pharmacy.Domain.ViewModels;
 
 namespace Pharmacy.Controllers
 {
@@ -201,6 +202,27 @@ namespace Pharmacy.Controllers
             }
 
             return filePath;
+        }
+
+        public IActionResult Profile()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var email = User.Identity.Name;
+                var user = _accountService.GetUserByEmail(email);
+                if (user != null)
+                {
+                    var model = new ProfileViewModel
+                    {
+                        Login = user.Login,
+                        Email = user.Email,
+                        PartImage = user.PartImage,
+                        CreatedAt = user.CreatedAt
+                    };
+                    return View(model);
+                }
+            }
+            return RedirectToAction("Login", "Account");
         }
     }
 }

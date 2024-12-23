@@ -7,4 +7,6 @@ public class MedicineFilter
     public decimal PriceMax { get; set; }
 
     public int OrderBy { get; set; }
+    
+    public string Search { get; set; }
 }

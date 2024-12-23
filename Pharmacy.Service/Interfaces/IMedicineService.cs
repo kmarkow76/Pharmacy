@@ -10,4 +10,5 @@ public interface IMedicineService
     BaseResponse<List<Medicine>> GetMedicinesByFilter(MedicineFilter filter);
     Task<BaseResponse<Medicine>> GetMedicinesById(Guid Id);
     
+
 }

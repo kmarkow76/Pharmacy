@@ -42,6 +42,15 @@
                     <a href="#" id="search-button" class="btn">
                         <img src="~/images/search.svg" alt="Search" style="height: 20px;"/>
                     </a>
+                    <a href="#" id="search-button" class="btn">
+                        <img src="~/images/cart.svg" alt="Search" style="height: 20px;"/>
+                    </a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-area="" asp-controller="Home" asp-action="Profile" id="search-button" class="btn">
+                            <img src="~/images/user.png" alt="Search" style="height: 20px;"/>
+                        </a>
+                    }
                     
                     @if (User.Identity.IsAuthenticated)
                     {

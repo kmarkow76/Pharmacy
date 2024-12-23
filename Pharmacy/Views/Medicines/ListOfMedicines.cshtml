@@ -6,6 +6,11 @@ Layout = "_Layout";
 ViewData["Title"] = "Список медикаментов";
 }
 <link rel="stylesheet" href="~/css/filter.css" asp-append-version="true"/>
+<div class="search-section">
+    <input type="text" id="search-input" placeholder="Введите название медикамента..." />
+    <button id="search-button" class="search-btn">Искать</button>
+</div>
+
 <div class="catalog-section">
     <div class="content-container">
         <!-- Секция категорий -->
@@ -36,11 +41,12 @@ ViewData["Title"] = "Список медикаментов";
                 <div>Текущие значения: <span id="adult-price-values">0 - 599</span></div>
             </div>
             <input id="CategoryId" value="@Model.CategoryId" style="display: none"/>
+            <input type="text" id="search-input" placeholder="Введите название товара">
             <div class="filter-button">
                 <button id="apply-filter" class="filter-apply">Применить фильтр</button>
             </div>
         </aside>
-
+       
         <!-- Секция каталога -->
         <main id="catalog" class="catalog-section catalog-product">
             <div class="catalog-grid">

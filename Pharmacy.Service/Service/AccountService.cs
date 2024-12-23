@@ -326,4 +326,13 @@ public class AccountService : IAccountServise
         }
     }
 
+    public User GetUserByEmail(string email)
+    {
+        if (string.IsNullOrEmpty(email))
+            throw new ArgumentException("Email пустой или нулевой", nameof(email));
+
+        var user = _userStorage.GetAll().FirstOrDefault(u => u.Email == email);
+        User users = _mapper.Map<User>(user);
+        return users;
+    }
 }

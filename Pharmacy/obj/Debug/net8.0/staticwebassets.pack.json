@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\media_style.css"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\css\\services.css",
       "PackagePath": "staticwebassets\\css\\services.css"
     },
@@ -125,8 +129,16 @@
       "PackagePath": "staticwebassets\\images\\category33.jpg"
     },
     {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\default-profile.jpg",
+      "PackagePath": "staticwebassets\\images\\default-profile.jpg"
+    },
+    {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\default.jpg",
       "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\designer.jpg",
+      "PackagePath": "staticwebassets\\images\\designer.jpg"
     },
     {
       "Id": "D:\\Практика(Зимняя)\\Проекты\\AAaaa\\Pharmacy\\Pharmacy\\wwwroot\\images\\diagn.jpg",

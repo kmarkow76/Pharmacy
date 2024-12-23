@@ -1,5 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Pharmacy.Domain.Models;
+using Pharmacy.Domain.Response;
 using Pharmacy.Domain.ViewModels;
 using Pharmacy.Domain.ViewModels.Category;
 using Pharmacy.Domain.ViewModels.Medecine;
@@ -31,14 +33,15 @@ public class MedicinesController : Controller
         };
         return View(listMedicines);
     }
+
     [HttpPost]
     public async Task<IActionResult> Filter([FromBody] MedicineFilter filter)
     {
         var result = _medicineService.GetMedicinesByFilter(filter);
-        var filteredTours = _mapper.Map<List<MedicinesForListOfMedicinesViewModel>>(result.Data);
-        return Json(filteredTours);
+        var filteredMedicines = _mapper.Map<List<MedicinesForListOfMedicinesViewModel>>(result.Data);
+        return Json(filteredMedicines);
     }
-    
+
 
     public async Task<IActionResult> MedicinePage(Guid Id)
     {
@@ -47,4 +50,8 @@ public class MedicinesController : Controller
         return View(medicine);
     }
 
+
 }
+
+
+
