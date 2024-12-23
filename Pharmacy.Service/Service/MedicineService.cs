@@ -60,49 +60,31 @@ public class MedicineService : IMedicineService
     {
         try
         {
-            // Получаем все медикаменты по ID категории
             var medicines = GetAllMedicinesByIdCategory(filter.CategoryId).Data;
 
-            if (filter != null && medicines != null)
+            if (!string.IsNullOrEmpty(filter.Search))
             {
-                // Фильтрация по названию товара, если задано значение в поле Search
-                if (!string.IsNullOrEmpty(filter.Search))
-                {
-                    medicines = medicines
-                        .Where(m => m.Name.Contains(filter.Search, StringComparison.OrdinalIgnoreCase)) // Сравнение без учета регистра
-                        .ToList();
-                }
-
-                // Фильтр по минимальной и максимальной цене
-                if (filter.PriceMin > 0 || filter.PriceMax > 0)
-                {
-                    medicines = medicines
-                        .Where(m => m.Price >= filter.PriceMin && m.Price <= filter.PriceMax)
-                        .ToList();
-                }
-
-                // Возвращаем отфильтрованные данные
-                return new BaseResponse<List<Medicine>>
-                {
-                    Data = medicines,
-                    Description = "Отфильтрованные данные",
-                    StatusCode = StatusCode.OK
-                };
+                medicines = medicines
+                    .Where(m => m.Name.Contains(filter.Search, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
             }
-            else
+
+            if (filter.PriceMin > 0 || filter.PriceMax > 0)
             {
-                // Если фильтр пустой или медикаменты не найдены
-                return new BaseResponse<List<Medicine>>
-                {
-                    Data = new List<Medicine>(),
-                    Description = "Нет данных для фильтрации",
-                    StatusCode = StatusCode.NoContent
-                };
+                medicines = medicines
+                    .Where(m => m.Price >= filter.PriceMin && m.Price <= filter.PriceMax)
+                    .ToList();
             }
+
+            return new BaseResponse<List<Medicine>>
+            {
+                Data = medicines,
+                Description = "Отфильтрованные данные",
+                StatusCode = StatusCode.OK
+            };
         }
         catch (Exception ex)
         {
-            // Обработка исключений
             return new BaseResponse<List<Medicine>>
             {
                 Description = ex.Message,
@@ -110,6 +92,7 @@ public class MedicineService : IMedicineService
             };
         }
     }
+
 
 
     public async Task<BaseResponse<Medicine>> GetMedicinesById(Guid id)

@@ -9,19 +9,19 @@ function updatePriceValues() {
     document.getElementById('adult-price-values').innerText = `${adultMin} - ${adultMax}`;
 }
 
-
-const sortSelect = document.getElementById('sort-options'); // Селектор сортировки
-const toursContainer = document.querySelector('.catalog-grid'); // Контейнер с турами
+// Селектор сортировки
+const sortSelect = document.getElementById('sort-options');
+const toursContainer = document.querySelector('.catalog-grid');
 
 // Событие на изменение выбора сортировки
 sortSelect.addEventListener('change', () => {
     const sortOption = sortSelect.value;
 
-    // Получаем все элементы туров
-    const tours = Array.from(toursContainer.querySelectorAll('.product-card'));
+    // Получаем все элементы товаров
+    const products = Array.from(toursContainer.querySelectorAll('.product-card'));
 
     // Сортируем элементы на основе выбранной опции
-    tours.sort((a, b) => {
+    products.sort((a, b) => {
         const priceA = parseFloat(a.querySelector('.product-price').textContent.replace('₽', '').trim()) || 0;
         const priceB = parseFloat(b.querySelector('.product-price').textContent.replace('₽', '').trim()) || 0;
 
@@ -36,10 +36,8 @@ sortSelect.addEventListener('change', () => {
     });
 
     // Упорядочиваем элементы в DOM
-    tours.forEach(tour => toursContainer.appendChild(tour));
+    products.forEach(product => toursContainer.appendChild(product));
 });
-
-
 
 // Отправка данных через fetch запрос
 document.getElementById('apply-filter').addEventListener('click', () => {
@@ -49,6 +47,7 @@ document.getElementById('apply-filter').addEventListener('click', () => {
     const maxPrice = document.getElementById('adult-max-price').value;
     const sortOrder = document.getElementById('sort-options').value;
     const search = document.getElementById('search-input').value;
+
     // Сбор данных из чекбоксов
     const mealTypes = Array.from(document.querySelectorAll('.meal-types input[type="checkbox"]:checked'))
         .map((checkbox) => checkbox.value);
@@ -59,6 +58,7 @@ document.getElementById('apply-filter').addEventListener('click', () => {
         priceMin: minPrice,
         priceMax: maxPrice,
         Search: search,
+        MealTypes: mealTypes,
     };
 
     console.log('Отправляемые данные:', filterData);
@@ -86,17 +86,16 @@ document.getElementById('apply-filter').addEventListener('click', () => {
         });
 });
 
+// Функция для отображения отфильтрованных данных
 function dataDisplay(data) {
-    // Найти контейнер для списка товаров
     const productsList = document.querySelector('.catalog-grid');
     productsList.innerHTML = ''; // Очистить старые данные
 
     if (!data || data.length === 0) {
-        // Если нет данных, отображаем сообщение
         const noProductsMessage = '<h2>По данному фильтру нет товаров</h2>';
         productsList.innerHTML = noProductsMessage;
     } else {
-        // Если данные есть, создаем элементы для товаров
+        // Создаем элементы для товаров
         data.forEach((medicine) => {
             const productItem = `
                 <div class="product-card">
@@ -116,4 +115,3 @@ function dataDisplay(data) {
         });
     }
 }
-
