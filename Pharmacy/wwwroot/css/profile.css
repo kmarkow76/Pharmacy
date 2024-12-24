@@ -1,58 +1,172 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
     margin: 0;
     padding: 0;
 }
 
 .profile-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    margin: 25px auto;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px 30px;
+    transition: transform 0.3s;
 }
 
+
+
+/* Заголовок профиля */
 .profile-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .profile-header h1 {
-    font-size: 24px;
-    color: #333;
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 5px;
 }
 
+.profile-header p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Информация о пользователе */
 .profile-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e1e5ea;
+    padding-bottom: 20px;
 }
 
 .profile-image {
-    flex: 1;
-    margin-right: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.profile-image .user-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.profile-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 3px solid #ddd;
 }
 
 .profile-details {
-    flex: 2;
+    flex-grow: 1;
+    color: #34495e;
 }
 
 .profile-details p {
-    font-size: 16px;
-    margin: 10px 0;
+    margin: 8px 0;
+    font-size: 17px;
 }
 
-.profile-details strong {
-    color: #333;
+.profile-details p strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Разделы "Сменить аватар" и "Сменить пароль" */
+.change-avatar,
+.change-password {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.change-avatar:hover,
+.change-password:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.change-avatar h2,
+.change-password h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #e1e5ea;
+    padding-bottom: 5px;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+form input {
+    border: 1px solid #dcdcdc;
+    background-color: #fbfbfb;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #ff7f7f;
+    outline: none;
+}
+
+form input[type="file"] {
+    padding: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #7f8c8d;
+}
+
+form button {
+    background-color: #ff8ac4;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ff8ac4;
+    transform: scale(1.02);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-details {
+        margin-top: 15px;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+    }
 }

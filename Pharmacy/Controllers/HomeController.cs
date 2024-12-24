@@ -224,6 +224,69 @@ namespace Pharmacy.Controllers
             }
             return RedirectToAction("Login", "Account");
         }
+        [HttpPost]
+        public async Task<IActionResult> ChangeAvatar(IFormFile newAvatar)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var email = User.Identity.Name;
+
+                // Проверяем, что файл передан
+                if (newAvatar != null && newAvatar.Length > 0)
+                {
+                    // Генерируем уникальное имя файла
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(newAvatar.FileName);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/avatars", fileName);
+
+                    try
+                    {
+                        // Сохраняем файл
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await newAvatar.CopyToAsync(stream);
+                        }
+
+                        // Обновляем путь в базе данных
+                        var response = await _accountService.ChangeAvatar(email, $"/images/avatars/{fileName}");
+                        if (response.StatusCode == Domain.Enum.StatusCode.OK)
+                        {
+                            return RedirectToAction("Profile");
+                        }
+
+                        ModelState.AddModelError("", response.Description);
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("", "Ошибка при загрузке файла: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Файл аватара не выбран.");
+                }
+            }
+
+            return View("Profile");
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(string oldPassword, string newPassword)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var email = User.Identity.Name;
+                var response = await _accountService.ChangePassword(email, oldPassword, newPassword);
+                if (response.StatusCode == Domain.Enum.StatusCode.OK)
+                {
+                    return RedirectToAction("Profile");
+                }
+                ModelState.AddModelError("", response.Description);
+            }
+            return View("Profile");
+        }
+
     }
+    
 }
 

@@ -11,4 +11,8 @@ public interface IAccountServise
     Task<BaseResponse<ClaimsIdentity>>ConfirmEmail(User model, string code,string confirmationCode);
     Task<BaseResponse<ClaimsIdentity>> IsCreatedAccount(User model);
     User GetUserByEmail(string email);
+    Task<BaseResponse<bool>> ChangeAvatar(string email, string newAvatarPath);
+    Task<BaseResponse<bool>> ChangePassword(string email, string oldPassword, string newPassword);
+
+
 }

@@ -1,10 +1,13 @@
 @model Pharmacy.Domain.ViewModels.ProfileViewModel
 @{
-    Layout = "_Layout";
-    ViewData["Title"] = "Профиль пользователя";
-    var defaultImage = "/images/default-profile — копия.jpg";
-    var userImage = string.IsNullOrEmpty(Model.PartImage) ? defaultImage : Model.PartImage;
+Layout = "_Layout";
+ViewData["Title"] = "Профиль пользователя";
+var defaultImage = "/images/default-profile.jpg";
+var userImage = Model?.PartImage != null && !string.IsNullOrEmpty(Model.PartImage)
+? Model.PartImage
+: defaultImage;
 }
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +21,29 @@
     </div>
     <div class="profile-info">
         <div class="profile-image">
-            <img src="@Model.PartImage" alt="Фото пользователя" class="user-image"/>
+            <img src="@userImage" alt="Фото пользователя" class="user-image"/>
         </div>
         <div class="profile-details">
             <p><strong>Логин:</strong> @Model.Login</p>
             <p><strong>Email:</strong> @Model.Email</p>
             <p><strong>Дата регистрации:</strong> @Model.CreatedAt.ToString("dd MMMM yyyy")</p>
         </div>
+    </div>
+    <div class="change-avatar">
+        <h2>Сменить аватар</h2>
+        <form asp-action="ChangeAvatar" method="post" enctype="multipart/form-data">
+            <input type="file" name="newAvatar" accept="image/*" required>
+            <button type="submit">Обновить</button>
+        </form>
+    </div>
+
+    <div class="change-password">
+        <h2>Сменить пароль</h2>
+        <form asp-action="ChangePassword" method="post">
+            <input type="password" name="oldPassword" placeholder="Старый пароль" required>
+            <input type="password" name="newPassword" placeholder="Новый пароль" required>
+            <button type="submit">Сменить пароль</button>
+        </form>
     </div>
 </div>
 </body>

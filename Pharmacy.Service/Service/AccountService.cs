@@ -335,4 +335,98 @@ public class AccountService : IAccountServise
         User users = _mapper.Map<User>(user);
         return users;
     }
+    public async Task<BaseResponse<bool>> ChangeAvatar(string email, string newAvatarPath)
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newAvatarPath))
+            {
+                return new BaseResponse<bool>
+                {
+                    Description = "Email или путь к аватару пустой",
+                    StatusCode = StatusCode.BadRequest
+                };
+            }
+
+            var user = await _userStorage.GetAll().FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return new BaseResponse<bool>
+                {
+                    Description = "Пользователь не найден",
+                    StatusCode = StatusCode.NotFound
+                };
+            }
+
+            user.PartImage = newAvatarPath;
+            await _userStorage.Update(user);
+
+            return new BaseResponse<bool>
+            {
+                Data = true,
+                Description = "Аватар успешно обновлен",
+                StatusCode = StatusCode.OK
+            };
+        }
+        catch (Exception ex)
+        {
+            return new BaseResponse<bool>
+            {
+                Description = ex.Message,
+                StatusCode = StatusCode.InternalServerError
+            };
+        }
+    }
+    public async Task<BaseResponse<bool>> ChangePassword(string email, string oldPassword, string newPassword)
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(oldPassword) || string.IsNullOrEmpty(newPassword))
+            {
+                return new BaseResponse<bool>
+                {
+                    Description = "Данные для смены пароля заполнены некорректно",
+                    StatusCode = StatusCode.BadRequest
+                };
+            }
+
+            var user = await _userStorage.GetAll().FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return new BaseResponse<bool>
+                {
+                    Description = "Пользователь не найден",
+                    StatusCode = StatusCode.NotFound
+                };
+            }
+
+            if (user.Password != HashPasswordHelper.HashPassword(oldPassword))
+            {
+                return new BaseResponse<bool>
+                {
+                    Description = "Старый пароль неверен",
+                    StatusCode = StatusCode.BadRequest
+                };
+            }
+
+            user.Password = HashPasswordHelper.HashPassword(newPassword);
+            await _userStorage.Update(user);
+
+            return new BaseResponse<bool>
+            {
+                Data = true,
+                Description = "Пароль успешно изменен",
+                StatusCode = StatusCode.OK
+            };
+        }
+        catch (Exception ex)
+        {
+            return new BaseResponse<bool>
+            {
+                Description = ex.Message,
+                StatusCode = StatusCode.InternalServerError
+            };
+        }
+    }
+
 }

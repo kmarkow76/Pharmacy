@@ -25,6 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="wwwroot\images\avatars\" />
       <Folder Include="wwwroot\images\travnast\" />
       <Folder Include="wwwroot\ImageUser\" />
     </ItemGroup>
